@@ -1,0 +1,818 @@
+Last login: Sun Oct 25 13:08:50 on ttys001
+dhcp226:~ Ln1878$ cd Desktop/LocalGit/Launch-setup/
+dhcp226:Launch-setup Ln1878$ ls
+1878KeyPairVM.pem	README.md		launch.sh
+LICENSE			Screenshots		testLaunch.sh
+dhcp226:Launch-setup Ln1878$ vi launch.sh 
+dhcp226:Launch-setup Ln1878$ vi testLaunch.sh 
+dhcp226:Launch-setup Ln1878$ ./testLaunch.sh 3 589857391706:user/YZ_MP1
+
+Error parsing parameter '--iam-instance-profile': Expected: '=', received: ':' for input:
+589857391706:user/YZ_MP1
+            ^
+
+^CTraceback (most recent call last):
+  File "/usr/local/bin/aws", line 5, in <module>
+    pkg_resources.run_script('awscli==1.8.7', 'aws')
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 492, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 1350, in run_script
+    execfile(script_filename, namespace, namespace)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/EGG-INFO/scripts/aws", line 27, in <module>
+    sys.exit(main())
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/EGG-INFO/scripts/aws", line 23, in main
+    return awscli.clidriver.main()
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 48, in main
+    return driver.main()
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 183, in main
+    return command_table[parsed_args.command](remaining, parsed_args)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 369, in __call__
+    return command_table[parsed_args.operation](remaining, parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/customizations/commands.py", line 190, in __call__
+    parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 538, in __call__
+    call_parameters, parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/customizations/waiters.py", line 208, in invoke
+    waiter.wait(**parameters)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/waiter.py", line 53, in wait
+    Waiter.wait(self, **kwargs)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/waiter.py", line 315, in wait
+    time.sleep(sleep_amount)
+KeyboardInterrupt
+dhcp226:Launch-setup Ln1878$ cat testLaunch.sh 
+aws ec2 run-instances --image-id ami-d05e75b8 --count $1 --instance-type t2.micro --key-name 1878KeyPairVM --security-group-ids sg-dfd9c3b8 --subnet-id subnet-65500d4e --iam-instance-profile $2  --associate-public-ip-address 
+
+aws ec2 wait instance-running
+
+dhcp226:Launch-setup Ln1878$ ./testLaunch.sh 3
+usage: aws [options] <command> <subcommand> [parameters]
+aws: error: argument --iam-instance-profile: expected one argument
+
+Waiter InstanceRunning failed: Max attempts exceeded
+dhcp226:Launch-setup Ln1878$ ./testLaunch.sh 3 =arn:aws:iam::589857391706:user/YZ_MP1
+
+Parameter validation failed:
+Unknown parameter in IamInstanceProfile: "", must be one of: Arn, Name
+^CTraceback (most recent call last):
+  File "/usr/local/bin/aws", line 5, in <module>
+    pkg_resources.run_script('awscli==1.8.7', 'aws')
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 492, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 1350, in run_script
+    execfile(script_filename, namespace, namespace)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/EGG-INFO/scripts/aws", line 27, in <module>
+    sys.exit(main())
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/EGG-INFO/scripts/aws", line 23, in main
+    return awscli.clidriver.main()
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 48, in main
+    return driver.main()
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 183, in main
+    return command_table[parsed_args.command](remaining, parsed_args)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 369, in __call__
+    return command_table[parsed_args.operation](remaining, parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/customizations/commands.py", line 190, in __call__
+    parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 538, in __call__
+    call_parameters, parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/customizations/waiters.py", line 208, in invoke
+    waiter.wait(**parameters)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/waiter.py", line 53, in wait
+    Waiter.wait(self, **kwargs)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/waiter.py", line 315, in wait
+    time.sleep(sleep_amount)
+KeyboardInterrupt
+dhcp226:Launch-setup Ln1878$ ./testLaunch.sh 3 arn=aws:iam::589857391706:user/YZ_MP1
+
+Parameter validation failed:
+Unknown parameter in IamInstanceProfile: "arn", must be one of: Arn, Name
+^CTraceback (most recent call last):
+  File "/usr/local/bin/aws", line 5, in <module>
+    pkg_resources.run_script('awscli==1.8.7', 'aws')
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 492, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 1350, in run_script
+    execfile(script_filename, namespace, namespace)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/EGG-INFO/scripts/aws", line 27, in <module>
+    sys.exit(main())
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/EGG-INFO/scripts/aws", line 23, in main
+    return awscli.clidriver.main()
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 48, in main
+    return driver.main()
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 183, in main
+    return command_table[parsed_args.command](remaining, parsed_args)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 369, in __call__
+    return command_table[parsed_args.operation](remaining, parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/customizations/commands.py", line 190, in __call__
+    parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 538, in __call__
+    call_parameters, parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/customizations/waiters.py", line 208, in invoke
+    waiter.wait(**parameters)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/waiter.py", line 53, in wait
+    Waiter.wait(self, **kwargs)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/waiter.py", line 315, in wait
+    time.sleep(sleep_amount)
+KeyboardInterrupt
+dhcp226:Launch-setup Ln1878$ ./testLaunch.sh 1 Arn=aws:iam::589857391706:user/YZ_MP1
+
+A client error (InvalidParameterValue) occurred when calling the RunInstances operation: Value (aws:iam::589857391706:user/YZ_MP1) for parameter iamInstanceProfile.arn is invalid. Invalid IAM Instance Profile ARN
+^CTraceback (most recent call last):
+  File "/usr/local/bin/aws", line 5, in <module>
+    pkg_resources.run_script('awscli==1.8.7', 'aws')
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 492, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 1350, in run_script
+    execfile(script_filename, namespace, namespace)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/EGG-INFO/scripts/aws", line 27, in <module>
+    sys.exit(main())
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/EGG-INFO/scripts/aws", line 23, in main
+    return awscli.clidriver.main()
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 48, in main
+    return driver.main()
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 183, in main
+    return command_table[parsed_args.command](remaining, parsed_args)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 369, in __call__
+    return command_table[parsed_args.operation](remaining, parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/customizations/commands.py", line 190, in __call__
+    parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 538, in __call__
+    call_parameters, parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/customizations/waiters.py", line 208, in invoke
+    waiter.wait(**parameters)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/waiter.py", line 53, in wait
+    Waiter.wait(self, **kwargs)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/waiter.py", line 315, in wait
+    time.sleep(sleep_amount)
+KeyboardInterrupt
+dhcp226:Launch-setup Ln1878$  ./testLaunch.sh 1 Name=YZ_MP1
+
+A client error (InvalidParameterValue) occurred when calling the RunInstances operation: Value (YZ_MP1) for parameter iamInstanceProfile.name is invalid. Invalid IAM Instance Profile name
+
+Waiter InstanceRunning failed: Max attempts exceeded
+dhcp226:Launch-setup Ln1878$ vi launch.sh 
+dhcp226:Launch-setup Ln1878$ cat testLaunch.sh 
+aws ec2 run-instances --image-id ami-d05e75b8 --count $1 --instance-type t2.micro --key-name 1878KeyPairVM --security-group-ids sg-dfd9c3b8 --subnet-id subnet-65500d4e --iam-instance-profile $2  --associate-public-ip-address 
+
+aws ec2 wait instance-running
+
+dhcp226:Launch-setup Ln1878$ ./testLaunch.sh 3 Name=YZ_MP1
+
+A client error (InvalidParameterValue) occurred when calling the RunInstances operation: Value (YZ_MP1) for parameter iamInstanceProfile.name is invalid. Invalid IAM Instance Profile name
+
+Waiter InstanceRunning failed: Max attempts exceeded
+dhcp226:Launch-setup Ln1878$ cd
+dhcp226:~ Ln1878$ cd Desktop/LocalGit/Application-setup/
+dhcp226:Application-setup Ln1878$ git add cleanup_NEW.sh 
+dhcp226:Application-setup Ln1878$ git commit -m"cleanup.sh added"
+[master c389486] cleanup.sh added
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 70 insertions(+)
+ create mode 100644 cleanup_NEW.sh
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.16 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   9e04eff..c389486  master -> master
+dhcp226:Application-setup Ln1878$ ls
+LICENSE		cleanup_NEW.sh	index.html	page2.html	stylesheet.css
+README.md	hawk.png	index_MP1.php	result.php
+bg.png		images		page1.html	setup.php
+dhcp226:Application-setup Ln1878$ git add index_MP1.php result.php stylesheet.css bg.png setup.php 
+dhcp226:Application-setup Ln1878$ git commit -m "php files, missing: gallery.php"
+[master 5e09365] php files, missing: gallery.php
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 334 insertions(+)
+ create mode 100755 bg.png
+ create mode 100755 index_MP1.php
+ create mode 100644 result.php
+ create mode 100644 setup.php
+ create mode 100644 stylesheet.css
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 215.01 KiB | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   c389486..5e09365  master -> master
+dhcp226:Application-setup Ln1878$ git add index_MP1.php 
+dhcp226:Application-setup Ln1878$ git commit -m"modified layout"
+[master 574a573] modified layout
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 405 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   5e09365..574a573  master -> master
+dhcp226:Application-setup Ln1878$ git add gallery.php 
+dhcp226:Application-setup Ln1878$ git commit -m"start coding gallery.php"
+[master 6128f66] start coding gallery.php
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 47 insertions(+)
+ create mode 100644 gallery.php
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   574a573..6128f66  master -> master
+dhcp226:Application-setup Ln1878$ git add test_SQL_connection.txt 
+dhcp226:Application-setup Ln1878$ git commit -m"SQL statement,connection testing"
+[master dda31e9] SQL statement,connection testing
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 39 insertions(+)
+ create mode 100644 test_SQL_connection.txt
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 913 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   6128f66..dda31e9  master -> master
+dhcp226:Application-setup Ln1878$ cd
+dhcp226:~ Ln1878$ cd Desktop/LocalGit/Tracking_Repo/
+dhcp226:Tracking_Repo Ln1878$ git add Screen\ Shot\ 2015-10-26\ at\ 9.02.32\ AM\ -\ L\'Ange\ Noir\ 1878.png 
+dhcp226:Tracking_Repo Ln1878$ git commit -m"SQL infos"
+[master e9ec601] SQL infos
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Screen Shot 2015-10-26 at 9.02.32 AM - L'Ange Noir 1878.png
+dhcp226:Tracking_Repo Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 414.01 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Tracking_Repo.git
+   a8415f3..e9ec601  master -> master
+dhcp226:Tracking_Repo Ln1878$ cd
+dhcp226:~ Ln1878$ cd Desktop/LocalGit/Launch-setup/
+dhcp226:Launch-setup Ln1878$ ls
+1878KeyPairVM.pem	README.md		launch.sh
+LICENSE			Screenshots		testLaunch.sh
+dhcp226:Launch-setup Ln1878$ cat launch.sh 
+
+aws ec2 run-instances --image-id $1 --count $2 --instance-type $3 --security-group-ids $4 --subnet-id $5 --key-name $6  --associate-public-ip-address --iam-instance-profile $7 --debug
+dhcp226:Launch-setup Ln1878$ cat testLaunch.sh 
+aws ec2 run-instances --image-id ami-d05e75b8 --count $1 --instance-type t2.micro --key-name 1878KeyPairVM --security-group-ids sg-dfd9c3b8 --subnet-id subnet-65500d4e --iam-instance-profile $2  --associate-public-ip-address 
+
+aws ec2 wait instance-running
+
+dhcp226:Launch-setup Ln1878$ ls
+1878KeyPairVM.pem	README.md		launch.sh
+LICENSE			Screenshots		testLaunch.sh
+dhcp226:Launch-setup Ln1878$ git add launch.sh 
+dhcp226:Launch-setup Ln1878$ git commit -m"modified apt-get install, added directories for file output"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	modified:   testLaunch.sh
+
+Untracked files:
+	.DS_Store
+
+no changes added to commit
+dhcp226:Launch-setup Ln1878$ git add testLaunch.sh 
+dhcp226:Launch-setup Ln1878$ git commit -m"launch.sh: modified apt-get install, added directories for file output"
+[master 2b6a3ac] launch.sh: modified apt-get install, added directories for file output
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+dhcp226:Launch-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 384 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Launch-setup.git
+   036af59..2b6a3ac  master -> master
+dhcp226:Launch-setup Ln1878$ cat testLaunch.sh 
+aws ec2 run-instances --image-id ami-d05e75b8 --count $1 --instance-type t2.micro --key-name 1878KeyPairVM --security-group-ids sg-dfd9c3b8 --subnet-id subnet-65500d4e --iam-instance-profile $2  --associate-public-ip-address 
+
+aws ec2 wait instance-running
+
+dhcp226:Launch-setup Ln1878$ cd
+dhcp226:~ Ln1878$ cd Desktop/LocalGit/
+dhcp226:LocalGit Ln1878$ ls
+Application-setup	Launch-setup		domain
+Environment-setup	PHP-Practice		service
+Lange_Noir_1878		Tracking_Repo		web
+dhcp226:LocalGit Ln1878$ cd Environment-setup/
+dhcp226:Environment-setup Ln1878$ ls
+1878KeyPairVM.pem	Screenshots		install-webserver.sh
+LICENSE			index.html		testUserData.sh
+README.md		install-env.sh
+dhcp226:Environment-setup Ln1878$ git add install-webserver.sh install-env.sh 
+dhcp226:Environment-setup Ln1878$ git commit -m"previous commit message was belong to this commit...selected a wrong folder to commit"
+[master 07cae5b] previous commit message was belong to this commit...selected a wrong folder to commit
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 31 insertions(+), 3 deletions(-)
+dhcp226:Environment-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 840 bytes | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Environment-setup.git
+   0eb30b5..07cae5b  master -> master
+dhcp226:Environment-setup Ln1878$ cd
+dhcp226:~ Ln1878$ cd Desktop/LocalGit/A
+-bash: cd: Desktop/LocalGit/A: No such file or directory
+dhcp226:~ Ln1878$ cd Desktop/LocalGit/Application-setup/
+dhcp226:Application-setup Ln1878$ git add index_MP1.php 
+dhcp226:Application-setup Ln1878$ git commit -m"layouts"
+[master b896e35] layouts
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 30 insertions(+), 16 deletions(-)
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 755 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   dda31e9..b896e35  master -> master
+dhcp226:Application-setup Ln1878$ git add cleanup.sh 
+dhcp226:Application-setup Ln1878$ git commit -m"renamed cleanup_new.sh into cleanup.sh"
+[master d36f440] renamed cleanup_new.sh into cleanup.sh
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 70 insertions(+)
+ create mode 100644 cleanup.sh
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 257 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   b896e35..d36f440  master -> master
+dhcp226:Application-setup Ln1878$ cd
+dhcp226:~ Ln1878$ cd Desktop/LocalGit/Launch-setup/
+dhcp226:Launch-setup Ln1878$ cat launch.sh 
+
+aws ec2 run-instances --image-id $1 --count $2 --instance-type $3 --security-group-ids $4 --subnet-id $5 --key-name $6  --associate-public-ip-address --iam-instance-profile $7 --debug
+dhcp226:Launch-setup Ln1878$ cat README.md 
+# Launch-setup
+
+The sequence od the arguements are:
+
+image-id  -> $1
+count	-> $2
+instance-type	-> $3
+security-group-ids 	->$4
+subnet	->$5
+key-name	->$6
+
+pls test based on this arg. sequence
+dhcp226:Launch-setup Ln1878$ vi README.md 
+dhcp226:Launch-setup Ln1878$ cat README.md 
+# Launch-setup
+
+The sequence of the revised arguements for MP-1 is:
+// cat launch.sh result:
+run-instances --image-id $1 --count $2 --instance-type $3 --security-group-ids $4 --subnet-id $5 --key-name $6  --associate-public-ip-address --iam-instance-profile $7
+
+image-id  -> $1
+count	-> $2
+instance-type	-> $3
+security-group-ids 	->$4
+subnet-id	->$5
+key-name	->$6
+iam-instance-profile        ->$7
+
+
+pls test based on this arg. sequence
+dhcp226:Launch-setup Ln1878$ git add README.md 
+dhcp226:Launch-setup Ln1878$ git commit -m"modified the testing sequence of the arguements for ./launch.sh"
+[master 7bc71f0] modified the testing sequence of the arguements for ./launch.sh
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+dhcp226:Launch-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 554 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Launch-setup.git
+   2b6a3ac..7bc71f0  master -> master
+dhcp226:Launch-setup Ln1878$ cd
+dhcp226:~ Ln1878$ cd Desktop/LocalGit/Application-setup/
+dhcp226:Application-setup Ln1878$ git add result.php 
+dhcp226:Application-setup Ln1878$ git commit -m"result.php tested, modified errors"
+[master 8e5f2c5] result.php tested, modified errors
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 332 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   d36f440..8e5f2c5  master -> master
+dhcp226:Application-setup Ln1878$ 
