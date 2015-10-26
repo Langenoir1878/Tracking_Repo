@@ -1,0 +1,254 @@
+Last login: Sun Oct 25 14:32:07 on ttys000
+dhcp226:~ Ln1878$ cd Desktop/LocalGit/Application-setup/
+dhcp226:Application-setup Ln1878$ ls
+LICENSE			hawk.png		page2.html
+README.md		images			result.php
+bg.png			index.html		setup.php
+cleanup.sh		index_MP1.php		stylesheet.css
+gallery.php		page1.html		test_SQL_connection.txt
+dhcp226:Application-setup Ln1878$ vi index_MP1.php 
+dhcp226:Application-setup Ln1878$ chmod 600 *
+dhcp226:Application-setup Ln1878$ git commit -m"modified minor layout"
+images/hawk.png: Permission denied
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	modified:   bg.png
+	deleted:    cleanup_NEW.sh
+	modified:   gallery.php
+	modified:   index_MP1.php
+
+no changes added to commit
+dhcp226:Application-setup Ln1878$ git add gallery.php index_MP1.php bg.png
+dhcp226:Application-setup Ln1878$ git commit -m"minor modifications and chmod cmd"
+[master f902ed7] minor modifications and chmod cmd
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+ mode change 100755 => 100644 bg.png
+ mode change 100755 => 100644 index_MP1.php
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 427 bytes | 0 bytes/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   1543693..f902ed7  master -> master
+dhcp226:Application-setup Ln1878$ ls
+LICENSE			hawk.png		page2.html
+README.md		images			result.php
+bg.png			index.html		setup.php
+cleanup.sh		index_MP1.php		stylesheet.css
+gallery.php		page1.html		test_SQL_connection.txt
+dhcp226:Application-setup Ln1878$ git add gallery.php 
+dhcp226:Application-setup Ln1878$ git commit -m"gallery.php frame without fetching urls from s3 bucket"
+[master e6ce18b] gallery.php frame without fetching urls from s3 bucket
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 64 insertions(+), 66 deletions(-)
+ rewrite gallery.php (88%)
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 828 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   f902ed7..e6ce18b  master -> master
+dhcp226:Application-setup Ln1878$ git add jquerypp.custom.js gamma.js 
+dhcp226:Application-setup Ln1878$ git commit -m"jqueryfiles for testing"
+[master c3182fd] jqueryfiles for testing
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1681 insertions(+)
+ create mode 100644 gamma.js
+ create mode 100644 jquerypp.custom.js
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 12.00 KiB | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   e6ce18b..c3182fd  master -> master
+dhcp226:Application-setup Ln1878$ git commit
+images/hawk.png: Permission denied
+images/hawk.png: Permission denied
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	deleted:    cleanup_NEW.sh
+	modified:   page1.html
+
+Untracked files:
+	.DS_Store
+
+no changes added to commit
+dhcp226:Application-setup Ln1878$ git add page1.html
+dhcp226:Application-setup Ln1878$ git commit -m"This was for the assignment 5...The previous S3 bucket has been deleted occasionally. Replacing it with another S3 bucket soon "
+[master d961a23] This was for the assignment 5...The previous S3 bucket has been deleted occasionally. Replacing it with another S3 bucket soon
+ Committer: langenoir <Ln1878@dhcp226.merusouth115.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+dhcp226:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 496 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   c3182fd..d961a23  master -> master
+dhcp226:Application-setup Ln1878$ cd
+dhcp226:~ Ln1878$ cd Downloads/
+dhcp226:Downloads Ln1878$ aws s3 mb https://s3.amazonaws.com/yzs3bucket/hahaDino.png
+
+usage: aws s3 mb <S3Path>
+Error: Invalid argument type
+dhcp226:Downloads Ln1878$ aws s3 mb https://s3.amazonaws.com/yzs3bucket
+
+usage: aws s3 mb <S3Path>
+Error: Invalid argument type
+dhcp226:Downloads Ln1878$ aws s3 mb S3://yzs3bucket
+
+usage: aws s3 mb <S3Path>
+Error: Invalid argument type
+dhcp226:Downloads Ln1878$ aws s3 mb s3://testbucket
+make_bucket failed: s3://testbucket/ A client error (BucketAlreadyExists) occurred when calling the CreateBucket operation: The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.
+
+dhcp226:Downloads Ln1878$ aws s3 mb s3://yzs3bucket
+make_bucket: s3://yzs3bucket/
+dhcp226:Downloads Ln1878$ chmod 755 hahaDino.png 
+dhcp226:Downloads Ln1878$ aws s3 cp hahaDino.png s3://yzs3bucket
+upload: ./hahaDino.png to s3://yzs3bucket/hahaDino.png
+dhcp226:Downloads Ln1878$ aws s3 cp hahadino.png s3://yzs3bucket --acl public-read
+upload: ./hahadino.png to s3://yzs3bucket/hahadino.png
+dhcp226:Downloads Ln1878$ 
