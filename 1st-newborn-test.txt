@@ -1,0 +1,20 @@
+dhcp117:Downloads Ln1878$ chmod 755 KeyPair_2015OCT.pem 
+dhcp117:Downloads Ln1878$ aws ec2 run-instances --image-id ami-d05e75b8 --count 1 --instance-type t2.micro --key-name KeyPair_2015OCT.pem --security-group-ids sg-c0f45da6 --subnet-id subnet-833692be --associate-public-ip-address
+
+A client error (InvalidKeyPair.NotFound) occurred when calling the RunInstances operation: The key pair 'KeyPair_2015OCT.pem' does not exist
+dhcp117:Downloads Ln1878$ aws ec2 run-instances --image-id ami-d05e75b8 --count 1 --instance-type t2.micro --key-name KeyPair_2015OCT.pem --security-group-ids sg-c0f45da6 --subnet-id subnet-833692be --associate-public-ip-address
+
+A client error (InvalidKeyPair.NotFound) occurred when calling the RunInstances operation: The key pair 'KeyPair_2015OCT.pem' does not exist
+dhcp117:Downloads Ln1878$ aws ec2 run-instances --image-id ami-d05e75b8 --count 1 --instance-type t2.micro --key-name KeyPair_2015OCT --security-group-ids sg-c0f45da6 --subnet-id subnet-833692be --associate-public-ip-address
+186069030643	r-a076e549
+INSTANCES	0	x86_64		False	xen	ami-d05e75b8	i-a46fc75d	t2.micro	KeyPair_2015OCT	2015-10-28T22:05:36.000Z	ip-10-0-11-108.ec2.internal	10.0.11.108		/dev/sda1	ebs	True	subnet-833692be	hvm	vpc-839d2ae7
+MONITORING	disabled
+NETWORKINTERFACES		06:ca:52:26:11:5d	eni-a63cd69a	186069030643	10.0.11.108	True	in-use	subnet-833692be	vpc-839d2ae7
+ATTACHMENT	2015-10-28T22:05:36.000Z	eni-attach-7e4e8b0f	True	attaching
+GROUPS	sg-c0f45da6	SG_yzln1878
+PRIVATEIPADDRESSES	True	10.0.11.108
+PLACEMENT	us-east-1e		default
+SECURITYGROUPS	sg-c0f45da6	SG_yzln1878
+STATE	0	pending
+STATEREASON	pending	pending
+dhcp117:Downloads Ln1878$ 
