@@ -1,0 +1,5 @@
+Error parsing parameter '--user-data': Unable to load paramfile file://../Environment-setup/install-webserver.sh: [Errno 2] No such file or directory: '../Environment-setup/install-webserver.sh'
+dhcp117:Downloads Ln1878$ cd ~/Desktop/LocalGit/Launch-setup/
+dhcp117:Launch-setup Ln1878$ aws ec2 run-instances --image-id ami-d05e75b8 --count 1 --instance-type t2.micro --key-name KeyPair_2015OCT --security-group-ids sg-c0f45da6 --subnet-id subnet-833692be --associate-public-ip-address --iam-instance-profile Name=ROLE_yzln1878 --user-data file://../Environment-setup/install-webserver.sh --output table | grep InstanceId | sed "s/|//g" | tr -d ' ' | sed "s/InstanceId//g"
+i-2174dcd8
+dhcp117:Launch-setup Ln1878$ 
