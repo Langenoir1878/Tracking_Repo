@@ -1,0 +1,1226 @@
+Last login: Wed Oct 28 21:00:35 on ttys000
+dhcp84:~ Ln1878$ cd Desktop/LocalGit/
+dhcp84:LocalGit Ln1878$ git clone https://github.com/Langenoir1878/Application-setup.git
+Cloning into 'Application-setup'...
+remote: Counting objects: 69, done.
+remote: Compressing objects: 100% (48/48), done.
+remote: Total 69 (delta 19), reused 0 (delta 0), pack-reused 21
+Unpacking objects: 100% (69/69), done.
+Checking connectivity... done.
+dhcp84:LocalGit Ln1878$ cd Application-setup/
+dhcp84:Application-setup Ln1878$ ls
+LICENSE			gamma.js		page1.html
+README.md		hawk.png		page2.html
+bg.png			images			result.php
+cleanup.sh		index.html		setup.php
+cleanup_NEW.sh		index_MP1.php		stylesheet.css
+gallery.php		jquerypp.custom.js	test_SQL_connection.txt
+dhcp84:Application-setup Ln1878$ git add hahaDino.png 
+dhcp84:Application-setup Ln1878$ chomod 755 hahaDino.png 
+-bash: chomod: command not found
+dhcp84:Application-setup Ln1878$ chmod 755 hahaDino.png 
+dhcp84:Application-setup Ln1878$ git commit -m"added image for assignment 5"
+[master d916460] added image for assignment 5
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100755 hahaDino.png
+dhcp84:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 248.22 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   b2b7636..d916460  master -> master
+dhcp84:Application-setup Ln1878$ cd ..
+dhcp84:LocalGit Ln1878$ cd Environment-setup/
+dhcp84:Environment-setup Ln1878$ git add aws_Assignment_5_install-webserver.sh 
+dhcp84:Environment-setup Ln1878$ mv aws_Assignment_5_install-webserver.sh aws_Assignment_5_install-env.sh
+dhcp84:Environment-setup Ln1878$ ls
+1878KeyPairVM.pem		index.html
+LICENSE				install-env.sh
+README.md			install-webserver.sh
+Screenshots			testUserData.sh
+aws_Assignment_5_install-env.sh
+dhcp84:Environment-setup Ln1878$ vi aws_Assignment_5_install-env.sh 
+dhcp84:Environment-setup Ln1878$ git add aws_Assignment_5_install-env.sh 
+dhcp84:Environment-setup Ln1878$ git commit -m"added teh install-env.sh for assignment 5"
+[master 30964a2] added teh install-env.sh for assignment 5
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 38 insertions(+)
+ create mode 100644 aws_Assignment_5_install-env.sh
+ create mode 100644 aws_Assignment_5_install-webserver.sh
+dhcp84:Environment-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 604 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Environment-setup.git
+   0b1e47e..30964a2  master -> master
+dhcp84:Environment-setup Ln1878$ cd ..
+dhcp84:LocalGit Ln1878$ cd Launch-setup/
+dhcp84:Launch-setup Ln1878$ git add aws_Assignment_5_launch.sh 
+dhcp84:Launch-setup Ln1878$ git commit -m"added the launch.sh for assignment 5 redo, s3 bucket are to be added through launch process"
+[master 8f42cc9] added the launch.sh for assignment 5 redo, s3 bucket are to be added through launch process
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 11 insertions(+)
+ create mode 100644 aws_Assignment_5_launch.sh
+dhcp84:Launch-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 572 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Launch-setup.git
+   99a2767..8f42cc9  master -> master
+dhcp84:Launch-setup Ln1878$ git add aws_Assignment_5_launch.sh 
+dhcp84:Launch-setup Ln1878$ git commit -m"added arguements examples"
+[master aa6ea67] added arguements examples
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+dhcp84:Launch-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 618 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Launch-setup.git
+   8f42cc9..aa6ea67  master -> master
+dhcp84:Launch-setup Ln1878$ git add aws_Assignment_5_launch.sh 
+dhcp84:Launch-setup Ln1878$ git commit -m"added create s3 bucket into launch shell"
+[master 960199b] added create s3 bucket into launch shell
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 8 insertions(+)
+dhcp84:Launch-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 524 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Launch-setup.git
+   aa6ea67..960199b  master -> master
+dhcp84:Launch-setup Ln1878$ cd ..
+dhcp84:LocalGit Ln1878$ cd Application-setup/
+dhcp84:Application-setup Ln1878$ ls
+LICENSE			hahaDino.png		page2.html
+README.md		hawk.png		result.php
+bg.png			images			setup.php
+cleanup.sh		index.html		stylesheet.css
+cleanup_NEW.sh		index_MP1.php		test_SQL_connection.txt
+gallery.php		jquerypp.custom.js
+gamma.js		page1.html
+dhcp84:Application-setup Ln1878$ cd ..
+dhcp84:LocalGit Ln1878$ cd Environment-setup/
+dhcp84:Environment-setup Ln1878$ vi aws_Assignment_5_install-env.sh 
+dhcp84:Environment-setup Ln1878$ cat aws_Assignment_5_install-env.sh 
+#!/bin/bash
+# Assignment 5 redo:
+# Yiming Zhang 
+# installing environment
+# Oct 28th
+sudo apt-get update -y
+sudo apt-get install -y apache2 git 
+
+git clone https://github.com/Langenoir1878/Environment-setup.git
+
+mv ./Environment-setup/images /var/www/html/images
+mv ./Environment-setup/index.html /var/www/html
+mv ./Application-setup/images /var/www/html/images
+mv ./Application-setup/*.php /var/www/html
+
+
+
+
+echo "Launching environment has been successfully installed for Assignment 5 on " . time > /tmp/hello.txtdhcp84:Environment-setup Ln1878$ 
+dhcp84:Environment-setup Ln1878$ cat aws_Assignment_5_install-env.sh 
+#!/bin/bash
+# Assignment 5 redo:
+# Yiming Zhang 
+# installing environment
+# Oct 28th
+sudo apt-get update -y
+sudo apt-get install -y apache2 git 
+
+git clone https://github.com/Langenoir1878/Environment-setup.git
+
+mv ./Environment-setup/images /var/www/html/images
+mv ./Application-setup/*.html /var/www/html
+mv ./Application-setup/*.png var/www/html
+mv ./Application-setup/images /var/www/html/images
+mv ./Application-setup/*.php /var/www/html
+
+
+
+
+echo "Launching environment has been successfully installed for Assignment 5 on " . time > /tmp/hello.txtdhcp84:Environment-setup Ln1878$ git add aws_Assignment_5_install-env.sh 
+dhcp84:Environment-setup Ln1878$ git commit -m"ensured leagal path"
+[master f3f9a79] ensured leagal path
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+dhcp84:Environment-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 321 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Environment-setup.git
+   30964a2..f3f9a79  master -> master
+dhcp84:Environment-setup Ln1878$ cd ..
+dhcp84:LocalGit Ln1878$ clear
+
+dhcp84:LocalGit Ln1878$ cd Launch-setup/
+dhcp84:Launch-setup Ln1878$ git add KeyPair_2015OCT.pem 
+dhcp84:Launch-setup Ln1878$ chmod 755 KeyPair_2015OCT.pem 
+dhcp84:Launch-setup Ln1878$ git add KeyPair_2015OCT.pem 
+dhcp84:Launch-setup Ln1878$ git commit -m"new kp for testing"
+[master 5e94866] new kp for testing
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 23 insertions(+)
+ create mode 100755 KeyPair_2015OCT.pem
+dhcp84:Launch-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.56 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Launch-setup.git
+   960199b..5e94866  master -> master
+dhcp84:Launch-setup Ln1878$ chmod aws_Assignment_5_launch.sh 
+usage:	chmod [-fhv] [-R [-H | -L | -P]] [-a | +a | =a  [i][# [ n]]] mode|entry file ...
+	chmod [-fhv] [-R [-H | -L | -P]] [-E | -C | -N | -i | -I] file ...
+dhcp84:Launch-setup Ln1878$ chmod 755 aws_Assignment_5_launch.sh 
+dhcp84:Launch-setup Ln1878$ ./aws_Assignment_5_launch.sh ami-d05e75b8 1 t2.micro sg-c0f45da6 subnet-833692be KeyPair_2015OCT
+2015-10-28 23:55:37,428 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/1.8.7 Python/2.7.10 Darwin/14.5.0, botocore version: 1.2.5
+2015-10-28 23:55:37,428 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['ec2', 'run-instances', '--image-id', 'ami-d05e75b8', '--count', '1', '--instance-type', 't2.micro', '--security-group-ids', 'sg-c0f45da6', '--subnet-id', 'subnet-833692be', '--key-name', 'KeyPair_2015OCT', '--associate-public-ip-address', '--debug']
+2015-10-28 23:55:37,428 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_scalar_parsers at 0x10ceb0e60>
+2015-10-28 23:55:37,428 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_assume_role_provider at 0x10ce80758>
+2015-10-28 23:55:37,537 - MainThread - botocore.hooks - DEBUG - Event service-data-loaded.ec2: calling handler <function register_retries_for_service at 0x10c9471b8>
+2015-10-28 23:55:37,538 - MainThread - botocore.handlers - DEBUG - Registering retry handlers for service: ec2
+2015-10-28 23:55:37,574 - MainThread - botocore.hooks - DEBUG - Event building-command-table.ec2: calling handler <functools.partial object at 0x10cec74c8>
+2015-10-28 23:55:37,574 - MainThread - awscli.customizations.removals - DEBUG - Removing operation: import-instance
+2015-10-28 23:55:37,574 - MainThread - awscli.customizations.removals - DEBUG - Removing operation: import-volume
+2015-10-28 23:55:37,574 - MainThread - botocore.hooks - DEBUG - Event building-command-table.ec2: calling handler <function add_waiters at 0x10ce8fc80>
+2015-10-28 23:55:37,581 - MainThread - awscli.clidriver - DEBUG - OrderedDict([(u'dry-run', <awscli.arguments.BooleanArgument object at 0x10d869bd0>), (u'no-dry-run', <awscli.arguments.BooleanArgument object at 0x10d869c10>), (u'image-id', <awscli.arguments.CLIArgument object at 0x10d869c50>), (u'min-count', <awscli.arguments.CLIArgument object at 0x10d869450>), (u'max-count', <awscli.arguments.CLIArgument object at 0x10d869c90>), (u'key-name', <awscli.arguments.CLIArgument object at 0x10d869cd0>), (u'security-groups', <awscli.arguments.ListArgument object at 0x10d869d10>), (u'security-group-ids', <awscli.arguments.ListArgument object at 0x10d869d50>), (u'user-data', <awscli.arguments.CLIArgument object at 0x10d869d90>), (u'instance-type', <awscli.arguments.CLIArgument object at 0x10d869dd0>), (u'placement', <awscli.arguments.CLIArgument object at 0x10d869e10>), (u'kernel-id', <awscli.arguments.CLIArgument object at 0x10d869e50>), (u'ramdisk-id', <awscli.arguments.CLIArgument object at 0x10d869e90>), (u'block-device-mappings', <awscli.arguments.ListArgument object at 0x10d869ed0>), (u'monitoring', <awscli.arguments.CLIArgument object at 0x10d869f10>), (u'subnet-id', <awscli.arguments.CLIArgument object at 0x10d869f50>), (u'disable-api-termination', <awscli.arguments.BooleanArgument object at 0x10d869f90>), (u'no-disable-api-termination', <awscli.arguments.BooleanArgument object at 0x10d869fd0>), (u'instance-initiated-shutdown-behavior', <awscli.arguments.CLIArgument object at 0x10d869510>), (u'private-ip-address', <awscli.arguments.CLIArgument object at 0x10d899050>), (u'client-token', <awscli.arguments.CLIArgument object at 0x10d899090>), (u'additional-info', <awscli.arguments.CLIArgument object at 0x10d8990d0>), (u'network-interfaces', <awscli.arguments.ListArgument object at 0x10d899110>), (u'iam-instance-profile', <awscli.arguments.CLIArgument object at 0x10d899150>), (u'ebs-optimized', <awscli.arguments.BooleanArgument object at 0x10d899190>), (u'no-ebs-optimized', <awscli.arguments.BooleanArgument object at 0x10d8991d0>)])
+2015-10-28 23:55:37,581 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_streaming_output_arg at 0x10cd215f0>
+2015-10-28 23:55:37,582 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _rename_arg at 0x10cedf398>
+2015-10-28 23:55:37,582 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _rename_arg at 0x10cedf668>
+2015-10-28 23:55:37,582 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <functools.partial object at 0x10cec7628>
+2015-10-28 23:55:37,584 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function ec2_add_count at 0x10cd21ed8>
+2015-10-28 23:55:37,584 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _add_params at 0x10cde7b90>
+2015-10-28 23:55:37,584 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_cli_input_json at 0x10ce73f50>
+2015-10-28 23:55:37,585 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function unify_paging_params at 0x10cd455f0>
+2015-10-28 23:55:37,597 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_generate_skeleton at 0x10ce802a8>
+2015-10-28 23:55:37,598 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.ec2.run-instances: calling handler <bound method CliInputJSONArgument.override_required_args of <awscli.customizations.cliinputjson.CliInputJSONArgument object at 0x10d899c10>>
+2015-10-28 23:55:37,598 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.ec2.run-instances: calling handler <bound method GenerateCliSkeletonArgument.override_required_args of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x10d869350>>
+2015-10-28 23:55:37,600 - MainThread - botocore.hooks - DEBUG - Event operation-args-parsed.ec2.run-instances: calling handler <functools.partial object at 0x10d782cb0>
+2015-10-28 23:55:37,601 - MainThread - botocore.hooks - DEBUG - Event operation-args-parsed.ec2.run-instances: calling handler <function _check_args at 0x10cde7c08>
+2015-10-28 23:55:37,601 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.dry-run: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,601 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.image-id: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,601 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x10cebbbd0>
+2015-10-28 23:55:37,601 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'ami-d05e75b8' for parameter "image_id": u'ami-d05e75b8'
+2015-10-28 23:55:37,601 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.key-name: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,602 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x10cebbbd0>
+2015-10-28 23:55:37,602 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'KeyPair_2015OCT' for parameter "key_name": u'KeyPair_2015OCT'
+2015-10-28 23:55:37,602 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.security-groups: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,602 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.security-group-ids: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,602 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x10cebbbd0>
+2015-10-28 23:55:37,602 - MainThread - awscli.arguments - DEBUG - Unpacked value of [u'sg-c0f45da6'] for parameter "security_group_ids": [u'sg-c0f45da6']
+2015-10-28 23:55:37,602 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.user-data: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,603 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.instance-type: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,603 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x10cebbbd0>
+2015-10-28 23:55:37,603 - MainThread - awscli.arguments - DEBUG - Unpacked value of u't2.micro' for parameter "instance_type": u't2.micro'
+2015-10-28 23:55:37,603 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.placement: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,603 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.kernel-id: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,603 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.ramdisk-id: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,603 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.block-device-mappings: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,604 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.monitoring: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,604 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.subnet-id: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,604 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x10cebbbd0>
+2015-10-28 23:55:37,604 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'subnet-833692be' for parameter "subnet_id": u'subnet-833692be'
+2015-10-28 23:55:37,604 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.disable-api-termination: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,604 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.instance-initiated-shutdown-behavior: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,604 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.private-ip-address: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,605 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.client-token: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,605 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.additional-info: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,605 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.network-interfaces: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,605 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.iam-instance-profile: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,605 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.ebs-optimized: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,605 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.count: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,605 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.secondary-private-ip-addresses: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,606 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.secondary-private-ip-address-count: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,606 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.associate-public-ip-address: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,606 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.no-associate-public-ip-address: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,606 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.cli-input-json: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,606 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.generate-cli-skeleton: calling handler <function uri_param at 0x10cc02140>
+2015-10-28 23:55:37,606 - MainThread - botocore.hooks - DEBUG - Event calling-command.ec2.run-instances: calling handler <bound method GenerateCliSkeletonArgument.generate_json_skeleton of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x10d869350>>
+2015-10-28 23:55:37,606 - MainThread - botocore.hooks - DEBUG - Event calling-command.ec2.run-instances: calling handler <bound method CliInputJSONArgument.add_to_call_parameters of <awscli.customizations.cliinputjson.CliInputJSONArgument object at 0x10d899c10>>
+2015-10-28 23:55:37,607 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: env
+2015-10-28 23:55:37,607 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: assume-role
+2015-10-28 23:55:37,607 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: shared-credentials-file
+2015-10-28 23:55:37,607 - MainThread - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2015-10-28 23:55:37,631 - MainThread - botocore.client - DEBUG - Registering retry handlers for service: ec2
+2015-10-28 23:55:37,644 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.ec2: calling handler <function add_generate_presigned_url at 0x10c9a5758>
+2015-10-28 23:55:37,714 - MainThread - botocore.endpoint - DEBUG - Setting ec2 timeout as (60, 60)
+2015-10-28 23:55:37,714 - MainThread - botocore.hooks - DEBUG - Event before-parameter-build.ec2.RunInstances: calling handler <function base64_encode_user_data at 0x10c947668>
+2015-10-28 23:55:37,714 - MainThread - botocore.hooks - DEBUG - Event before-parameter-build.ec2.RunInstances: calling handler <function _fix_args at 0x10cde7c80>
+2015-10-28 23:55:37,718 - MainThread - botocore.endpoint - DEBUG - Making request for <botocore.model.OperationModel object at 0x10d928190> (verify_ssl=True) with params: {'body': {u'NetworkInterface.1.SecurityGroupId.1': u'sg-c0f45da6', 'Version': u'2015-04-15', u'NetworkInterface.1.SubnetId': u'subnet-833692be', u'ImageId': u'ami-d05e75b8', u'KeyName': u'KeyPair_2015OCT', 'MaxCount': 1, 'Action': u'RunInstances', 'MinCount': 1, u'NetworkInterface.1.AssociatePublicIpAddress': 'true', u'InstanceType': u't2.micro', u'NetworkInterface.1.DeviceIndex': 0}, 'url': u'https://ec2.us-east-1.amazonaws.com/', 'headers': {'User-Agent': 'aws-cli/1.8.7 Python/2.7.10 Darwin/14.5.0'}, 'query_string': '', 'url_path': '/', 'method': u'POST'}
+2015-10-28 23:55:37,718 - MainThread - botocore.hooks - DEBUG - Event request-created.ec2.RunInstances: calling handler <bound method EC2._sign_request of <botocore.client.EC2 object at 0x10d9287d0>>
+2015-10-28 23:55:37,719 - MainThread - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2015-10-28 23:55:37,719 - MainThread - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+host:ec2.us-east-1.amazonaws.com
+user-agent:aws-cli/1.8.7 Python/2.7.10 Darwin/14.5.0
+x-amz-date:20151029T045537Z
+
+host;user-agent;x-amz-date
+6c78e4e8789d16510ed389e49811c7a3cca4cac3d786077643cd58ec256736c4
+2015-10-28 23:55:37,719 - MainThread - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20151029T045537Z
+20151029/us-east-1/ec2/aws4_request
+231516a1568adc513474028955992db74f7104aeaae8bf7f03ea73b2340f5ab1
+2015-10-28 23:55:37,720 - MainThread - botocore.auth - DEBUG - Signature:
+a7d9c060c94ffa546e87a3806dfbd10142869b7c173a60dbec874dff660765fa
+2015-10-28 23:55:37,772 - MainThread - botocore.endpoint - DEBUG - Sending http request: <PreparedRequest [POST]>
+2015-10-28 23:55:37,772 - MainThread - botocore.vendored.requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): ec2.us-east-1.amazonaws.com
+2015-10-28 23:55:39,062 - MainThread - botocore.vendored.requests.packages.urllib3.connectionpool - DEBUG - "POST / HTTP/1.1" 200 None
+2015-10-28 23:55:39,063 - MainThread - botocore.parsers - DEBUG - Response headers: {'transfer-encoding': 'chunked', 'vary': 'Accept-Encoding', 'server': 'AmazonEC2', 'content-type': 'text/xml;charset=UTF-8', 'date': 'Thu, 29 Oct 2015 04:55:33 GMT'}
+2015-10-28 23:55:39,063 - MainThread - botocore.parsers - DEBUG - Response body:
+<?xml version="1.0" encoding="UTF-8"?>
+<RunInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2015-04-15/">
+    <requestId>a1e40bd6-eae5-4475-a747-4ab28f494f2b</requestId>
+    <reservationId>r-c430a32d</reservationId>
+    <ownerId>186069030643</ownerId>
+    <groupSet/>
+    <instancesSet>
+        <item>
+            <instanceId>i-0b3098f2</instanceId>
+            <imageId>ami-d05e75b8</imageId>
+            <instanceState>
+                <code>0</code>
+                <name>pending</name>
+            </instanceState>
+            <privateDnsName>ip-10-0-4-173.ec2.internal</privateDnsName>
+            <dnsName/>
+            <reason/>
+            <keyName>KeyPair_2015OCT</keyName>
+            <amiLaunchIndex>0</amiLaunchIndex>
+            <productCodes/>
+            <instanceType>t2.micro</instanceType>
+            <launchTime>2015-10-29T04:55:34.000Z</launchTime>
+            <placement>
+                <availabilityZone>us-east-1e</availabilityZone>
+                <groupName/>
+                <tenancy>default</tenancy>
+            </placement>
+            <monitoring>
+                <state>disabled</state>
+            </monitoring>
+            <subnetId>subnet-833692be</subnetId>
+            <vpcId>vpc-839d2ae7</vpcId>
+            <privateIpAddress>10.0.4.173</privateIpAddress>
+            <sourceDestCheck>true</sourceDestCheck>
+            <groupSet>
+                <item>
+                    <groupId>sg-c0f45da6</groupId>
+                    <groupName>SG_yzln1878</groupName>
+                </item>
+            </groupSet>
+            <stateReason>
+                <code>pending</code>
+                <message>pending</message>
+            </stateReason>
+            <architecture>x86_64</architecture>
+            <rootDeviceType>ebs</rootDeviceType>
+            <rootDeviceName>/dev/sda1</rootDeviceName>
+            <blockDeviceMapping/>
+            <virtualizationType>hvm</virtualizationType>
+            <clientToken/>
+            <hypervisor>xen</hypervisor>
+            <networkInterfaceSet>
+                <item>
+                    <networkInterfaceId>eni-c49762f8</networkInterfaceId>
+                    <subnetId>subnet-833692be</subnetId>
+                    <vpcId>vpc-839d2ae7</vpcId>
+                    <description/>
+                    <ownerId>186069030643</ownerId>
+                    <status>in-use</status>
+                    <macAddress>06:53:b0:95:36:41</macAddress>
+                    <privateIpAddress>10.0.4.173</privateIpAddress>
+                    <privateDnsName>ip-10-0-4-173.ec2.internal</privateDnsName>
+                    <sourceDestCheck>true</sourceDestCheck>
+                    <groupSet>
+                        <item>
+                            <groupId>sg-c0f45da6</groupId>
+                            <groupName>SG_yzln1878</groupName>
+                        </item>
+                    </groupSet>
+                    <attachment>
+                        <attachmentId>eni-attach-f59a5e84</attachmentId>
+                        <deviceIndex>0</deviceIndex>
+                        <status>attaching</status>
+                        <attachTime>2015-10-29T04:55:34.000Z</attachTime>
+                        <deleteOnTermination>true</deleteOnTermination>
+                    </attachment>
+                    <privateIpAddressesSet>
+                        <item>
+                            <privateIpAddress>10.0.4.173</privateIpAddress>
+                            <privateDnsName>ip-10-0-4-173.ec2.internal</privateDnsName>
+                            <primary>true</primary>
+                        </item>
+                    </privateIpAddressesSet>
+                </item>
+            </networkInterfaceSet>
+            <ebsOptimized>false</ebsOptimized>
+        </item>
+    </instancesSet>
+</RunInstancesResponse>
+2015-10-28 23:55:39,073 - MainThread - botocore.hooks - DEBUG - Event needs-retry.ec2.RunInstances: calling handler <botocore.retryhandler.RetryHandler object at 0x10d70cd90>
+2015-10-28 23:55:39,073 - MainThread - botocore.retryhandler - DEBUG - No retry needed.
+2015-10-28 23:55:39,073 - MainThread - botocore.hooks - DEBUG - Event after-call.ec2.RunInstances: calling handler <awscli.errorhandler.ErrorHandler object at 0x10cec9850>
+2015-10-28 23:55:39,073 - MainThread - awscli.errorhandler - DEBUG - HTTP Response Code: 200
+2015-10-28 23:55:39,074 - MainThread - awscli.formatter - DEBUG - RequestId: a1e40bd6-eae5-4475-a747-4ab28f494f2b
+186069030643	r-c430a32d
+INSTANCES	0	x86_64		False	xen	ami-d05e75b8	i-0b3098f2	t2.micro	KeyPair_2015OCT	2015-10-29T04:55:34.000Z	ip-10-0-4-173.ec2.internal	10.0.4.173		/dev/sda1	ebs	True	subnet-833692be	hvm	vpc-839d2ae7
+MONITORING	disabled
+NETWORKINTERFACES		06:53:b0:95:36:41	eni-c49762f8	186069030643	ip-10-0-4-173.ec2.internal	10.0.4.173	True	in-use	subnet-833692be	vpc-839d2ae7
+ATTACHMENT	2015-10-29T04:55:34.000Z	eni-attach-f59a5e84	True	attaching
+GROUPS	sg-c0f45da6	SG_yzln1878
+PRIVATEIPADDRESSES	True	ip-10-0-4-173.ec2.internal	10.0.4.173
+PLACEMENT	us-east-1e		default
+SECURITYGROUPS	sg-c0f45da6	SG_yzln1878
+STATE	0	pending
+STATEREASON	pending	pending
+make_bucket: s3://Student_yzln1878_AS5_S3_Bucket_Pls_Delete_Me_After_Testing/
+chmod: hahaDino.png: No such file or directory
+warning: Skipping file /Users/Ln1878/Desktop/LocalGit/Launch-setup/hahaDino.png. File does not exist.
+
+dhcp84:Launch-setup Ln1878$ git add hahaDino.png 
+dhcp84:Launch-setup Ln1878$ chmod 755 hahaDino.png 
+dhcp84:Launch-setup Ln1878$ git commit -m"added the image to be moved into the auto created s3 bucket"
+[master 49441e6] added the image to be moved into the auto created s3 bucket
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100755 hahaDino.png
+dhcp84:Launch-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 248.23 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Launch-setup.git
+   5e94866..49441e6  master -> master
+dhcp84:Launch-setup Ln1878$ chmod 755 aws_Assignment_5_launch.sh 
+dhcp84:Launch-setup Ln1878$ chmod 755 ../Environment-setup/aws_Assignment_5_install-env.sh 
+dhcp84:Launch-setup Ln1878$ git add aws_Assignment_5_launch.sh 
+dhcp84:Launch-setup Ln1878$ git commit -m"added user file: aws_Assignment_5_install-env.sh"
+[master bcffc15] added user file: aws_Assignment_5_install-env.sh
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ mode change 100644 => 100755 aws_Assignment_5_launch.sh
+dhcp84:Launch-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 420 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Launch-setup.git
+   49441e6..bcffc15  master -> master
+dhcp84:Launch-setup Ln1878$ cd ..
+dhcp84:LocalGit Ln1878$ cd Application-setup/
+dhcp84:Application-setup Ln1878$ git add page1.html 
+dhcp84:Application-setup Ln1878$ git commit -m"modified the url of the image location for s3 bucket"
+[master e87ebd8] modified the url of the image location for s3 bucket
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+dhcp84:Application-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 407 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Application-setup.git
+   d916460..e87ebd8  master -> master
+dhcp84:Application-setup Ln1878$ cd ..
+dhcp84:LocalGit Ln1878$ cd Launch-setup/
+dhcp84:Launch-setup Ln1878$ ./aws_Assignment_5_launch.sh ami-d05e75b8 1 t2.micro sg-c0f45da6 subnet-833692be KeyPair_2015OCT
+chmod: ../Environment-setup/aws-Assignment_5_install-env.sh: No such file or directory
+2015-10-29 00:19:04,019 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/1.8.7 Python/2.7.10 Darwin/14.5.0, botocore version: 1.2.5
+2015-10-29 00:19:04,019 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['ec2', 'run-instances', '--image-id', 'ami-d05e75b8', '--count', '1', '--instance-type', 't2.micro', '--security-group-ids', 'sg-c0f45da6', '--subnet-id', 'subnet-833692be', '--key-name', 'KeyPair_2015OCT', '--associate-public-ip-address', '--user-data', 'file://../Environment-setup/aws-Assignment_5_install-env.sh', '--debug']
+2015-10-29 00:19:04,019 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_scalar_parsers at 0x107534e60>
+2015-10-29 00:19:04,020 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_assume_role_provider at 0x107505758>
+2015-10-29 00:19:04,126 - MainThread - botocore.hooks - DEBUG - Event service-data-loaded.ec2: calling handler <function register_retries_for_service at 0x106fcc1b8>
+2015-10-29 00:19:04,126 - MainThread - botocore.handlers - DEBUG - Registering retry handlers for service: ec2
+2015-10-29 00:19:04,164 - MainThread - botocore.hooks - DEBUG - Event building-command-table.ec2: calling handler <functools.partial object at 0x10754c4c8>
+2015-10-29 00:19:04,164 - MainThread - awscli.customizations.removals - DEBUG - Removing operation: import-instance
+2015-10-29 00:19:04,164 - MainThread - awscli.customizations.removals - DEBUG - Removing operation: import-volume
+2015-10-29 00:19:04,164 - MainThread - botocore.hooks - DEBUG - Event building-command-table.ec2: calling handler <function add_waiters at 0x107515c80>
+2015-10-29 00:19:04,171 - MainThread - awscli.clidriver - DEBUG - OrderedDict([(u'dry-run', <awscli.arguments.BooleanArgument object at 0x107eeebd0>), (u'no-dry-run', <awscli.arguments.BooleanArgument object at 0x107eeec10>), (u'image-id', <awscli.arguments.CLIArgument object at 0x107eeec50>), (u'min-count', <awscli.arguments.CLIArgument object at 0x107eee450>), (u'max-count', <awscli.arguments.CLIArgument object at 0x107eeec90>), (u'key-name', <awscli.arguments.CLIArgument object at 0x107eeecd0>), (u'security-groups', <awscli.arguments.ListArgument object at 0x107eeed10>), (u'security-group-ids', <awscli.arguments.ListArgument object at 0x107eeed50>), (u'user-data', <awscli.arguments.CLIArgument object at 0x107eeed90>), (u'instance-type', <awscli.arguments.CLIArgument object at 0x107eeedd0>), (u'placement', <awscli.arguments.CLIArgument object at 0x107eeee10>), (u'kernel-id', <awscli.arguments.CLIArgument object at 0x107eeee50>), (u'ramdisk-id', <awscli.arguments.CLIArgument object at 0x107eeee90>), (u'block-device-mappings', <awscli.arguments.ListArgument object at 0x107eeeed0>), (u'monitoring', <awscli.arguments.CLIArgument object at 0x107eeef10>), (u'subnet-id', <awscli.arguments.CLIArgument object at 0x107eeef50>), (u'disable-api-termination', <awscli.arguments.BooleanArgument object at 0x107eeef90>), (u'no-disable-api-termination', <awscli.arguments.BooleanArgument object at 0x107eeefd0>), (u'instance-initiated-shutdown-behavior', <awscli.arguments.CLIArgument object at 0x107eee510>), (u'private-ip-address', <awscli.arguments.CLIArgument object at 0x107f1e050>), (u'client-token', <awscli.arguments.CLIArgument object at 0x107f1e090>), (u'additional-info', <awscli.arguments.CLIArgument object at 0x107f1e0d0>), (u'network-interfaces', <awscli.arguments.ListArgument object at 0x107f1e110>), (u'iam-instance-profile', <awscli.arguments.CLIArgument object at 0x107f1e150>), (u'ebs-optimized', <awscli.arguments.BooleanArgument object at 0x107f1e190>), (u'no-ebs-optimized', <awscli.arguments.BooleanArgument object at 0x107f1e1d0>)])
+2015-10-29 00:19:04,171 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_streaming_output_arg at 0x1073a65f0>
+2015-10-29 00:19:04,171 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _rename_arg at 0x107564398>
+2015-10-29 00:19:04,172 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _rename_arg at 0x107564668>
+2015-10-29 00:19:04,172 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <functools.partial object at 0x10754c628>
+2015-10-29 00:19:04,174 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function ec2_add_count at 0x1073a6ed8>
+2015-10-29 00:19:04,174 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _add_params at 0x10746cb90>
+2015-10-29 00:19:04,174 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_cli_input_json at 0x1074f8f50>
+2015-10-29 00:19:04,175 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function unify_paging_params at 0x1073ca5f0>
+2015-10-29 00:19:04,198 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_generate_skeleton at 0x1075052a8>
+2015-10-29 00:19:04,198 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.ec2.run-instances: calling handler <bound method CliInputJSONArgument.override_required_args of <awscli.customizations.cliinputjson.CliInputJSONArgument object at 0x107f1ec10>>
+2015-10-29 00:19:04,198 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.ec2.run-instances: calling handler <bound method GenerateCliSkeletonArgument.override_required_args of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x107eee350>>
+2015-10-29 00:19:04,204 - MainThread - botocore.hooks - DEBUG - Event operation-args-parsed.ec2.run-instances: calling handler <functools.partial object at 0x107e07cb0>
+2015-10-29 00:19:04,204 - MainThread - botocore.hooks - DEBUG - Event operation-args-parsed.ec2.run-instances: calling handler <function _check_args at 0x10746cc08>
+2015-10-29 00:19:04,205 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.dry-run: calling handler <function uri_param at 0x107287140>
+2015-10-29 00:19:04,205 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.image-id: calling handler <function uri_param at 0x107287140>
+2015-10-29 00:19:04,205 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x107540bd0>
+2015-10-29 00:19:04,205 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'ami-d05e75b8' for parameter "image_id": u'ami-d05e75b8'
+2015-10-29 00:19:04,205 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.key-name: calling handler <function uri_param at 0x107287140>
+2015-10-29 00:19:04,205 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x107540bd0>
+2015-10-29 00:19:04,206 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'KeyPair_2015OCT' for parameter "key_name": u'KeyPair_2015OCT'
+2015-10-29 00:19:04,206 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.security-groups: calling handler <function uri_param at 0x107287140>
+2015-10-29 00:19:04,206 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.security-group-ids: calling handler <function uri_param at 0x107287140>
+2015-10-29 00:19:04,206 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x107540bd0>
+2015-10-29 00:19:04,206 - MainThread - awscli.arguments - DEBUG - Unpacked value of [u'sg-c0f45da6'] for parameter "security_group_ids": [u'sg-c0f45da6']
+2015-10-29 00:19:04,206 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.user-data: calling handler <function uri_param at 0x107287140>
+2015-10-29 00:19:04,207 - MainThread - awscli.clidriver - DEBUG - Exception caught in main()
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 183, in main
+    return command_table[parsed_args.command](remaining, parsed_args)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 369, in __call__
+    return command_table[parsed_args.operation](remaining, parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 510, in __call__
+    self.arg_table)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 564, in _build_call_parameters
+    value = self._unpack_arg(arg_object, value)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 576, in _unpack_arg
+    cli_argument, value)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/argprocess.py", line 82, in unpack_argument
+    operation_name=operation_name)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/session.py", line 656, in emit_first_non_none_response
+    responses = self._events.emit(event_name, **kwargs)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/hooks.py", line 226, in emit
+    return self._emit(event_name, kwargs)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/hooks.py", line 209, in _emit
+    response = handler(**kwargs)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/argprocess.py", line 99, in uri_param
+    return _check_for_uri_param(cli_argument, value)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/argprocess.py", line 108, in _check_for_uri_param
+    raise ParamError(param.cli_name, six.text_type(e))
+ParamError: Error parsing parameter '--user-data': Unable to load paramfile file://../Environment-setup/aws-Assignment_5_install-env.sh: [Errno 2] No such file or directory: '../Environment-setup/aws-Assignment_5_install-env.sh'
+2015-10-29 00:19:04,236 - MainThread - awscli.clidriver - DEBUG - Exiting with rc 255
+
+Error parsing parameter '--user-data': Unable to load paramfile file://../Environment-setup/aws-Assignment_5_install-env.sh: [Errno 2] No such file or directory: '../Environment-setup/aws-Assignment_5_install-env.sh'
+make_bucket: s3://Student_yzln1878_AS5_S3_Bucket_Pls_Delete_Me_After_Testing/
+upload: ./hahaDino.png to s3://Student_yzln1878_AS5_S3_Bucket_Pls_Delete_Me_After_Testing/hahaDino.png
+dhcp84:Launch-setup Ln1878$ git add aws_Assignment_5_launch.sh 
+dhcp84:Launch-setup Ln1878$ git commit -m"...cannot find the install-env in the other folder"
+[master 5ff48e7] ...cannot find the install-env in the other folder
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+dhcp84:Launch-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 325 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Launch-setup.git
+   bcffc15..5ff48e7  master -> master
+dhcp84:Launch-setup Ln1878$ ./aws_Assignment_5_launch.sh ami-d05e75b8 1 t2.micro sg-c0f45da6 subnet-833692be KeyPair_2015OCT
+2015-10-29 00:21:39,086 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/1.8.7 Python/2.7.10 Darwin/14.5.0, botocore version: 1.2.5
+2015-10-29 00:21:39,086 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['ec2', 'run-instances', '--image-id', 'ami-d05e75b8', '--count', '1', '--instance-type', 't2.micro', '--security-group-ids', 'sg-c0f45da6', '--subnet-id', 'subnet-833692be', '--key-name', 'KeyPair_2015OCT', '--associate-public-ip-address', '--user-data', 'file://../Environment-setup/aws-Assignment_5_install-env.sh', '--debug']
+2015-10-29 00:21:39,087 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_scalar_parsers at 0x101f82e60>
+2015-10-29 00:21:39,087 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_assume_role_provider at 0x101f53758>
+2015-10-29 00:21:39,176 - MainThread - botocore.hooks - DEBUG - Event service-data-loaded.ec2: calling handler <function register_retries_for_service at 0x101a1a1b8>
+2015-10-29 00:21:39,177 - MainThread - botocore.handlers - DEBUG - Registering retry handlers for service: ec2
+2015-10-29 00:21:39,214 - MainThread - botocore.hooks - DEBUG - Event building-command-table.ec2: calling handler <functools.partial object at 0x101f9a4c8>
+2015-10-29 00:21:39,214 - MainThread - awscli.customizations.removals - DEBUG - Removing operation: import-instance
+2015-10-29 00:21:39,214 - MainThread - awscli.customizations.removals - DEBUG - Removing operation: import-volume
+2015-10-29 00:21:39,214 - MainThread - botocore.hooks - DEBUG - Event building-command-table.ec2: calling handler <function add_waiters at 0x101f63c80>
+2015-10-29 00:21:39,221 - MainThread - awscli.clidriver - DEBUG - OrderedDict([(u'dry-run', <awscli.arguments.BooleanArgument object at 0x10293cbd0>), (u'no-dry-run', <awscli.arguments.BooleanArgument object at 0x10293cc10>), (u'image-id', <awscli.arguments.CLIArgument object at 0x10293cc50>), (u'min-count', <awscli.arguments.CLIArgument object at 0x10293c450>), (u'max-count', <awscli.arguments.CLIArgument object at 0x10293cc90>), (u'key-name', <awscli.arguments.CLIArgument object at 0x10293ccd0>), (u'security-groups', <awscli.arguments.ListArgument object at 0x10293cd10>), (u'security-group-ids', <awscli.arguments.ListArgument object at 0x10293cd50>), (u'user-data', <awscli.arguments.CLIArgument object at 0x10293cd90>), (u'instance-type', <awscli.arguments.CLIArgument object at 0x10293cdd0>), (u'placement', <awscli.arguments.CLIArgument object at 0x10293ce10>), (u'kernel-id', <awscli.arguments.CLIArgument object at 0x10293ce50>), (u'ramdisk-id', <awscli.arguments.CLIArgument object at 0x10293ce90>), (u'block-device-mappings', <awscli.arguments.ListArgument object at 0x10293ced0>), (u'monitoring', <awscli.arguments.CLIArgument object at 0x10293cf10>), (u'subnet-id', <awscli.arguments.CLIArgument object at 0x10293cf50>), (u'disable-api-termination', <awscli.arguments.BooleanArgument object at 0x10293cf90>), (u'no-disable-api-termination', <awscli.arguments.BooleanArgument object at 0x10293cfd0>), (u'instance-initiated-shutdown-behavior', <awscli.arguments.CLIArgument object at 0x10293c510>), (u'private-ip-address', <awscli.arguments.CLIArgument object at 0x10296c050>), (u'client-token', <awscli.arguments.CLIArgument object at 0x10296c090>), (u'additional-info', <awscli.arguments.CLIArgument object at 0x10296c0d0>), (u'network-interfaces', <awscli.arguments.ListArgument object at 0x10296c110>), (u'iam-instance-profile', <awscli.arguments.CLIArgument object at 0x10296c150>), (u'ebs-optimized', <awscli.arguments.BooleanArgument object at 0x10296c190>), (u'no-ebs-optimized', <awscli.arguments.BooleanArgument object at 0x10296c1d0>)])
+2015-10-29 00:21:39,221 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_streaming_output_arg at 0x101df45f0>
+2015-10-29 00:21:39,222 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _rename_arg at 0x101fb2398>
+2015-10-29 00:21:39,222 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _rename_arg at 0x101fb2668>
+2015-10-29 00:21:39,222 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <functools.partial object at 0x101f9a628>
+2015-10-29 00:21:39,225 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function ec2_add_count at 0x101df4ed8>
+2015-10-29 00:21:39,225 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _add_params at 0x101ebab90>
+2015-10-29 00:21:39,225 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_cli_input_json at 0x101f46f50>
+2015-10-29 00:21:39,226 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function unify_paging_params at 0x101e185f0>
+2015-10-29 00:21:39,226 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_generate_skeleton at 0x101f532a8>
+2015-10-29 00:21:39,227 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.ec2.run-instances: calling handler <bound method CliInputJSONArgument.override_required_args of <awscli.customizations.cliinputjson.CliInputJSONArgument object at 0x10296cc10>>
+2015-10-29 00:21:39,227 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.ec2.run-instances: calling handler <bound method GenerateCliSkeletonArgument.override_required_args of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x10293c350>>
+2015-10-29 00:21:39,230 - MainThread - botocore.hooks - DEBUG - Event operation-args-parsed.ec2.run-instances: calling handler <functools.partial object at 0x102855cb0>
+2015-10-29 00:21:39,231 - MainThread - botocore.hooks - DEBUG - Event operation-args-parsed.ec2.run-instances: calling handler <function _check_args at 0x101ebac08>
+2015-10-29 00:21:39,231 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.dry-run: calling handler <function uri_param at 0x101cd5140>
+2015-10-29 00:21:39,231 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.image-id: calling handler <function uri_param at 0x101cd5140>
+2015-10-29 00:21:39,231 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x101f8ebd0>
+2015-10-29 00:21:39,231 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'ami-d05e75b8' for parameter "image_id": u'ami-d05e75b8'
+2015-10-29 00:21:39,231 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.key-name: calling handler <function uri_param at 0x101cd5140>
+2015-10-29 00:21:39,232 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x101f8ebd0>
+2015-10-29 00:21:39,232 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'KeyPair_2015OCT' for parameter "key_name": u'KeyPair_2015OCT'
+2015-10-29 00:21:39,232 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.security-groups: calling handler <function uri_param at 0x101cd5140>
+2015-10-29 00:21:39,232 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.security-group-ids: calling handler <function uri_param at 0x101cd5140>
+2015-10-29 00:21:39,232 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x101f8ebd0>
+2015-10-29 00:21:39,232 - MainThread - awscli.arguments - DEBUG - Unpacked value of [u'sg-c0f45da6'] for parameter "security_group_ids": [u'sg-c0f45da6']
+2015-10-29 00:21:39,232 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.user-data: calling handler <function uri_param at 0x101cd5140>
+2015-10-29 00:21:39,233 - MainThread - awscli.clidriver - DEBUG - Exception caught in main()
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 183, in main
+    return command_table[parsed_args.command](remaining, parsed_args)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 369, in __call__
+    return command_table[parsed_args.operation](remaining, parsed_globals)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 510, in __call__
+    self.arg_table)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 564, in _build_call_parameters
+    value = self._unpack_arg(arg_object, value)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/clidriver.py", line 576, in _unpack_arg
+    cli_argument, value)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/argprocess.py", line 82, in unpack_argument
+    operation_name=operation_name)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/session.py", line 656, in emit_first_non_none_response
+    responses = self._events.emit(event_name, **kwargs)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/hooks.py", line 226, in emit
+    return self._emit(event_name, kwargs)
+  File "/Library/Python/2.7/site-packages/botocore-1.2.5-py2.7.egg/botocore/hooks.py", line 209, in _emit
+    response = handler(**kwargs)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/argprocess.py", line 99, in uri_param
+    return _check_for_uri_param(cli_argument, value)
+  File "/Library/Python/2.7/site-packages/awscli-1.8.7-py2.7.egg/awscli/argprocess.py", line 108, in _check_for_uri_param
+    raise ParamError(param.cli_name, six.text_type(e))
+ParamError: Error parsing parameter '--user-data': Unable to load paramfile file://../Environment-setup/aws-Assignment_5_install-env.sh: [Errno 2] No such file or directory: '../Environment-setup/aws-Assignment_5_install-env.sh'
+2015-10-29 00:21:39,234 - MainThread - awscli.clidriver - DEBUG - Exiting with rc 255
+
+Error parsing parameter '--user-data': Unable to load paramfile file://../Environment-setup/aws-Assignment_5_install-env.sh: [Errno 2] No such file or directory: '../Environment-setup/aws-Assignment_5_install-env.sh'
+make_bucket: s3://Student_yzln1878_AS5_S3_Bucket_Pls_Delete_Me_After_Testing/
+upload: ./hahaDino.png to s3://Student_yzln1878_AS5_S3_Bucket_Pls_Delete_Me_After_Testing/hahaDino.png
+dhcp84:Launch-setup Ln1878$ git add aws_Assignment_5_launch.sh 
+dhcp84:Launch-setup Ln1878$ git commit -m"found the spelling error"
+[master 2c8e58c] found the spelling error
+ Committer: langenoir <Ln1878@dhcp84.merusouth116.iit.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+dhcp84:Launch-setup Ln1878$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 319 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/Langenoir1878/Launch-setup.git
+   5ff48e7..2c8e58c  master -> master
+dhcp84:Launch-setup Ln1878$ ./aws_Assignment_5_launch.sh ami-d05e75b8 1 t2.micro sg-c0f45da6 subnet-833692be KeyPair_2015OCT
+2015-10-29 00:24:52,769 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/1.8.7 Python/2.7.10 Darwin/14.5.0, botocore version: 1.2.5
+2015-10-29 00:24:52,769 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['ec2', 'run-instances', '--image-id', 'ami-d05e75b8', '--count', '1', '--instance-type', 't2.micro', '--security-group-ids', 'sg-c0f45da6', '--subnet-id', 'subnet-833692be', '--key-name', 'KeyPair_2015OCT', '--associate-public-ip-address', '--user-data', 'file://../Environment-setup/aws_Assignment_5_install-env.sh', '--debug']
+2015-10-29 00:24:52,770 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_scalar_parsers at 0x106ea3e60>
+2015-10-29 00:24:52,770 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_assume_role_provider at 0x106e74758>
+2015-10-29 00:24:52,860 - MainThread - botocore.hooks - DEBUG - Event service-data-loaded.ec2: calling handler <function register_retries_for_service at 0x10693b1b8>
+2015-10-29 00:24:52,860 - MainThread - botocore.handlers - DEBUG - Registering retry handlers for service: ec2
+2015-10-29 00:24:52,900 - MainThread - botocore.hooks - DEBUG - Event building-command-table.ec2: calling handler <functools.partial object at 0x106ebb4c8>
+2015-10-29 00:24:52,900 - MainThread - awscli.customizations.removals - DEBUG - Removing operation: import-instance
+2015-10-29 00:24:52,900 - MainThread - awscli.customizations.removals - DEBUG - Removing operation: import-volume
+2015-10-29 00:24:52,900 - MainThread - botocore.hooks - DEBUG - Event building-command-table.ec2: calling handler <function add_waiters at 0x106e84c80>
+2015-10-29 00:24:52,906 - MainThread - awscli.clidriver - DEBUG - OrderedDict([(u'dry-run', <awscli.arguments.BooleanArgument object at 0x10785dbd0>), (u'no-dry-run', <awscli.arguments.BooleanArgument object at 0x10785dc10>), (u'image-id', <awscli.arguments.CLIArgument object at 0x10785dc50>), (u'min-count', <awscli.arguments.CLIArgument object at 0x10785d450>), (u'max-count', <awscli.arguments.CLIArgument object at 0x10785dc90>), (u'key-name', <awscli.arguments.CLIArgument object at 0x10785dcd0>), (u'security-groups', <awscli.arguments.ListArgument object at 0x10785dd10>), (u'security-group-ids', <awscli.arguments.ListArgument object at 0x10785dd50>), (u'user-data', <awscli.arguments.CLIArgument object at 0x10785dd90>), (u'instance-type', <awscli.arguments.CLIArgument object at 0x10785ddd0>), (u'placement', <awscli.arguments.CLIArgument object at 0x10785de10>), (u'kernel-id', <awscli.arguments.CLIArgument object at 0x10785de50>), (u'ramdisk-id', <awscli.arguments.CLIArgument object at 0x10785de90>), (u'block-device-mappings', <awscli.arguments.ListArgument object at 0x10785ded0>), (u'monitoring', <awscli.arguments.CLIArgument object at 0x10785df10>), (u'subnet-id', <awscli.arguments.CLIArgument object at 0x10785df50>), (u'disable-api-termination', <awscli.arguments.BooleanArgument object at 0x10785df90>), (u'no-disable-api-termination', <awscli.arguments.BooleanArgument object at 0x10785dfd0>), (u'instance-initiated-shutdown-behavior', <awscli.arguments.CLIArgument object at 0x10785d510>), (u'private-ip-address', <awscli.arguments.CLIArgument object at 0x10788d050>), (u'client-token', <awscli.arguments.CLIArgument object at 0x10788d090>), (u'additional-info', <awscli.arguments.CLIArgument object at 0x10788d0d0>), (u'network-interfaces', <awscli.arguments.ListArgument object at 0x10788d110>), (u'iam-instance-profile', <awscli.arguments.CLIArgument object at 0x10788d150>), (u'ebs-optimized', <awscli.arguments.BooleanArgument object at 0x10788d190>), (u'no-ebs-optimized', <awscli.arguments.BooleanArgument object at 0x10788d1d0>)])
+2015-10-29 00:24:52,906 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_streaming_output_arg at 0x106d155f0>
+2015-10-29 00:24:52,906 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _rename_arg at 0x106ed3398>
+2015-10-29 00:24:52,906 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _rename_arg at 0x106ed3668>
+2015-10-29 00:24:52,907 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <functools.partial object at 0x106ebb628>
+2015-10-29 00:24:52,909 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function ec2_add_count at 0x106d15ed8>
+2015-10-29 00:24:52,909 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _add_params at 0x106ddbb90>
+2015-10-29 00:24:52,910 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_cli_input_json at 0x106e67f50>
+2015-10-29 00:24:52,910 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function unify_paging_params at 0x106d395f0>
+2015-10-29 00:24:52,911 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_generate_skeleton at 0x106e742a8>
+2015-10-29 00:24:52,911 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.ec2.run-instances: calling handler <bound method CliInputJSONArgument.override_required_args of <awscli.customizations.cliinputjson.CliInputJSONArgument object at 0x10788dc10>>
+2015-10-29 00:24:52,911 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.ec2.run-instances: calling handler <bound method GenerateCliSkeletonArgument.override_required_args of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x10785d350>>
+2015-10-29 00:24:52,914 - MainThread - botocore.hooks - DEBUG - Event operation-args-parsed.ec2.run-instances: calling handler <functools.partial object at 0x107776cb0>
+2015-10-29 00:24:52,914 - MainThread - botocore.hooks - DEBUG - Event operation-args-parsed.ec2.run-instances: calling handler <function _check_args at 0x106ddbc08>
+2015-10-29 00:24:52,915 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.dry-run: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,915 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.image-id: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,915 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x106eafbd0>
+2015-10-29 00:24:52,915 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'ami-d05e75b8' for parameter "image_id": u'ami-d05e75b8'
+2015-10-29 00:24:52,915 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.key-name: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,915 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x106eafbd0>
+2015-10-29 00:24:52,916 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'KeyPair_2015OCT' for parameter "key_name": u'KeyPair_2015OCT'
+2015-10-29 00:24:52,916 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.security-groups: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,916 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.security-group-ids: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,916 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x106eafbd0>
+2015-10-29 00:24:52,916 - MainThread - awscli.arguments - DEBUG - Unpacked value of [u'sg-c0f45da6'] for parameter "security_group_ids": [u'sg-c0f45da6']
+2015-10-29 00:24:52,916 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.user-data: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,917 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x106eafbd0>
+2015-10-29 00:24:52,917 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'#!/bin/bash\n# Assignment 5 redo:\n# Yiming Zhang \n# installing environment\n# Oct 28th\nsudo apt-get update -y\nsudo apt-get install -y apache2 git \n\ngit clone https://github.com/Langenoir1878/Environment-setup.git\n\nmv ./Environment-setup/images /var/www/html/images\nmv ./Application-setup/*.html /var/www/html\nmv ./Application-setup/*.png var/www/html\nmv ./Application-setup/images /var/www/html/images\nmv ./Application-setup/*.php /var/www/html\n\n\n\n\necho "Launching environment has been successfully installed for Assignment 5 on " . time > /tmp/hello.txt' for parameter "user_data": u'#!/bin/bash\n# Assignment 5 redo:\n# Yiming Zhang \n# installing environment\n# Oct 28th\nsudo apt-get update -y\nsudo apt-get install -y apache2 git \n\ngit clone https://github.com/Langenoir1878/Environment-setup.git\n\nmv ./Environment-setup/images /var/www/html/images\nmv ./Application-setup/*.html /var/www/html\nmv ./Application-setup/*.png var/www/html\nmv ./Application-setup/images /var/www/html/images\nmv ./Application-setup/*.php /var/www/html\n\n\n\n\necho "Launching environment has been successfully installed for Assignment 5 on " . time > /tmp/hello.txt'
+2015-10-29 00:24:52,917 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.instance-type: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,917 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x106eafbd0>
+2015-10-29 00:24:52,917 - MainThread - awscli.arguments - DEBUG - Unpacked value of u't2.micro' for parameter "instance_type": u't2.micro'
+2015-10-29 00:24:52,917 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.placement: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,917 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.kernel-id: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,918 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.ramdisk-id: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,918 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.block-device-mappings: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,918 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.monitoring: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,918 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.subnet-id: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,918 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x106eafbd0>
+2015-10-29 00:24:52,918 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'subnet-833692be' for parameter "subnet_id": u'subnet-833692be'
+2015-10-29 00:24:52,918 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.disable-api-termination: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,918 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.instance-initiated-shutdown-behavior: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,919 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.private-ip-address: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,919 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.client-token: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,919 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.additional-info: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,919 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.network-interfaces: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,919 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.iam-instance-profile: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,919 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.ebs-optimized: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,919 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.count: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,920 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.secondary-private-ip-addresses: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,920 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.secondary-private-ip-address-count: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,920 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.associate-public-ip-address: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,920 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.no-associate-public-ip-address: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,920 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.cli-input-json: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,920 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.generate-cli-skeleton: calling handler <function uri_param at 0x106bf6140>
+2015-10-29 00:24:52,920 - MainThread - botocore.hooks - DEBUG - Event calling-command.ec2.run-instances: calling handler <bound method GenerateCliSkeletonArgument.generate_json_skeleton of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x10785d350>>
+2015-10-29 00:24:52,921 - MainThread - botocore.hooks - DEBUG - Event calling-command.ec2.run-instances: calling handler <bound method CliInputJSONArgument.add_to_call_parameters of <awscli.customizations.cliinputjson.CliInputJSONArgument object at 0x10788dc10>>
+2015-10-29 00:24:52,921 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: env
+2015-10-29 00:24:52,921 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: assume-role
+2015-10-29 00:24:52,921 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: shared-credentials-file
+2015-10-29 00:24:52,921 - MainThread - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2015-10-29 00:24:52,923 - MainThread - botocore.client - DEBUG - Registering retry handlers for service: ec2
+2015-10-29 00:24:52,934 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.ec2: calling handler <function add_generate_presigned_url at 0x106999758>
+2015-10-29 00:24:52,971 - MainThread - botocore.endpoint - DEBUG - Setting ec2 timeout as (60, 60)
+2015-10-29 00:24:52,971 - MainThread - botocore.hooks - DEBUG - Event before-parameter-build.ec2.RunInstances: calling handler <function base64_encode_user_data at 0x10693b668>
+2015-10-29 00:24:52,971 - MainThread - botocore.hooks - DEBUG - Event before-parameter-build.ec2.RunInstances: calling handler <function _fix_args at 0x106ddbc80>
+2015-10-29 00:24:52,975 - MainThread - botocore.endpoint - DEBUG - Making request for <botocore.model.OperationModel object at 0x10791c210> (verify_ssl=True) with params: {'body': {u'UserData': u'IyEvYmluL2Jhc2gKIyBBc3NpZ25tZW50IDUgcmVkbzoKIyBZaW1pbmcgWmhhbmcgCiMgaW5zdGFsbGluZyBlbnZpcm9ubWVudAojIE9jdCAyOHRoCnN1ZG8gYXB0LWdldCB1cGRhdGUgLXkKc3VkbyBhcHQtZ2V0IGluc3RhbGwgLXkgYXBhY2hlMiBnaXQgCgpnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL0xhbmdlbm9pcjE4NzgvRW52aXJvbm1lbnQtc2V0dXAuZ2l0CgptdiAuL0Vudmlyb25tZW50LXNldHVwL2ltYWdlcyAvdmFyL3d3dy9odG1sL2ltYWdlcwptdiAuL0FwcGxpY2F0aW9uLXNldHVwLyouaHRtbCAvdmFyL3d3dy9odG1sCm12IC4vQXBwbGljYXRpb24tc2V0dXAvKi5wbmcgdmFyL3d3dy9odG1sCm12IC4vQXBwbGljYXRpb24tc2V0dXAvaW1hZ2VzIC92YXIvd3d3L2h0bWwvaW1hZ2VzCm12IC4vQXBwbGljYXRpb24tc2V0dXAvKi5waHAgL3Zhci93d3cvaHRtbAoKCgoKZWNobyAiTGF1bmNoaW5nIGVudmlyb25tZW50IGhhcyBiZWVuIHN1Y2Nlc3NmdWxseSBpbnN0YWxsZWQgZm9yIEFzc2lnbm1lbnQgNSBvbiAiIC4gdGltZSA+IC90bXAvaGVsbG8udHh0', u'NetworkInterface.1.SecurityGroupId.1': u'sg-c0f45da6', u'NetworkInterface.1.SubnetId': u'subnet-833692be', u'ImageId': u'ami-d05e75b8', u'KeyName': u'KeyPair_2015OCT', 'Version': u'2015-04-15', 'MaxCount': 1, 'Action': u'RunInstances', 'MinCount': 1, u'NetworkInterface.1.AssociatePublicIpAddress': 'true', u'InstanceType': u't2.micro', u'NetworkInterface.1.DeviceIndex': 0}, 'url': u'https://ec2.us-east-1.amazonaws.com/', 'headers': {'User-Agent': 'aws-cli/1.8.7 Python/2.7.10 Darwin/14.5.0'}, 'query_string': '', 'url_path': '/', 'method': u'POST'}
+2015-10-29 00:24:52,975 - MainThread - botocore.hooks - DEBUG - Event request-created.ec2.RunInstances: calling handler <bound method EC2._sign_request of <botocore.client.EC2 object at 0x10791c850>>
+2015-10-29 00:24:52,976 - MainThread - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2015-10-29 00:24:52,977 - MainThread - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+host:ec2.us-east-1.amazonaws.com
+user-agent:aws-cli/1.8.7 Python/2.7.10 Darwin/14.5.0
+x-amz-date:20151029T052452Z
+
+host;user-agent;x-amz-date
+e914f8f495182378161bf397ae5287d53c27856cf336b4fd38383f56c630bab9
+2015-10-29 00:24:52,977 - MainThread - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20151029T052452Z
+20151029/us-east-1/ec2/aws4_request
+064036b8afef2561fc10adca975f0ad27576beb8642983577715a8557fcf7bb2
+2015-10-29 00:24:52,977 - MainThread - botocore.auth - DEBUG - Signature:
+cf40dbb3b275900a0da0e33f3bbd55175e437d98d1295c9d2322da30956da22f
+2015-10-29 00:24:52,985 - MainThread - botocore.endpoint - DEBUG - Sending http request: <PreparedRequest [POST]>
+2015-10-29 00:24:52,986 - MainThread - botocore.vendored.requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): ec2.us-east-1.amazonaws.com
+2015-10-29 00:24:58,040 - MainThread - botocore.vendored.requests.packages.urllib3.connectionpool - DEBUG - "POST / HTTP/1.1" 200 None
+2015-10-29 00:24:58,040 - MainThread - botocore.parsers - DEBUG - Response headers: {'transfer-encoding': 'chunked', 'vary': 'Accept-Encoding', 'server': 'AmazonEC2', 'content-type': 'text/xml;charset=UTF-8', 'date': 'Thu, 29 Oct 2015 05:24:49 GMT'}
+2015-10-29 00:24:58,041 - MainThread - botocore.parsers - DEBUG - Response body:
+<?xml version="1.0" encoding="UTF-8"?>
+<RunInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2015-04-15/">
+    <requestId>6b90ed63-1bee-48c0-ab1a-bdeca6c140b9</requestId>
+    <reservationId>r-3a34a7d3</reservationId>
+    <ownerId>186069030643</ownerId>
+    <groupSet/>
+    <instancesSet>
+        <item>
+            <instanceId>i-4e359db7</instanceId>
+            <imageId>ami-d05e75b8</imageId>
+            <instanceState>
+                <code>0</code>
+                <name>pending</name>
+            </instanceState>
+            <privateDnsName>ip-10-0-2-136.ec2.internal</privateDnsName>
+            <dnsName/>
+            <reason/>
+            <keyName>KeyPair_2015OCT</keyName>
+            <amiLaunchIndex>0</amiLaunchIndex>
+            <productCodes/>
+            <instanceType>t2.micro</instanceType>
+            <launchTime>2015-10-29T05:24:49.000Z</launchTime>
+            <placement>
+                <availabilityZone>us-east-1e</availabilityZone>
+                <groupName/>
+                <tenancy>default</tenancy>
+            </placement>
+            <monitoring>
+                <state>disabled</state>
+            </monitoring>
+            <subnetId>subnet-833692be</subnetId>
+            <vpcId>vpc-839d2ae7</vpcId>
+            <privateIpAddress>10.0.2.136</privateIpAddress>
+            <sourceDestCheck>true</sourceDestCheck>
+            <groupSet>
+                <item>
+                    <groupId>sg-c0f45da6</groupId>
+                    <groupName>SG_yzln1878</groupName>
+                </item>
+            </groupSet>
+            <stateReason>
+                <code>pending</code>
+                <message>pending</message>
+            </stateReason>
+            <architecture>x86_64</architecture>
+            <rootDeviceType>ebs</rootDeviceType>
+            <rootDeviceName>/dev/sda1</rootDeviceName>
+            <blockDeviceMapping/>
+            <virtualizationType>hvm</virtualizationType>
+            <clientToken/>
+            <hypervisor>xen</hypervisor>
+            <networkInterfaceSet>
+                <item>
+                    <networkInterfaceId>eni-e69e6bda</networkInterfaceId>
+                    <subnetId>subnet-833692be</subnetId>
+                    <vpcId>vpc-839d2ae7</vpcId>
+                    <description/>
+                    <ownerId>186069030643</ownerId>
+                    <status>in-use</status>
+                    <macAddress>06:f7:90:60:5d:b9</macAddress>
+                    <privateIpAddress>10.0.2.136</privateIpAddress>
+                    <privateDnsName>ip-10-0-2-136.ec2.internal</privateDnsName>
+                    <sourceDestCheck>true</sourceDestCheck>
+                    <groupSet>
+                        <item>
+                            <groupId>sg-c0f45da6</groupId>
+                            <groupName>SG_yzln1878</groupName>
+                        </item>
+                    </groupSet>
+                    <attachment>
+                        <attachmentId>eni-attach-44a76335</attachmentId>
+                        <deviceIndex>0</deviceIndex>
+                        <status>attaching</status>
+                        <attachTime>2015-10-29T05:24:49.000Z</attachTime>
+                        <deleteOnTermination>true</deleteOnTermination>
+                    </attachment>
+                    <privateIpAddressesSet>
+                        <item>
+                            <privateIpAddress>10.0.2.136</privateIpAddress>
+                            <privateDnsName>ip-10-0-2-136.ec2.internal</privateDnsName>
+                            <primary>true</primary>
+                        </item>
+                    </privateIpAddressesSet>
+                </item>
+            </networkInterfaceSet>
+            <ebsOptimized>false</ebsOptimized>
+        </item>
+    </instancesSet>
+</RunInstancesResponse>
+2015-10-29 00:24:58,049 - MainThread - botocore.hooks - DEBUG - Event needs-retry.ec2.RunInstances: calling handler <botocore.retryhandler.RetryHandler object at 0x107700d90>
+2015-10-29 00:24:58,049 - MainThread - botocore.retryhandler - DEBUG - No retry needed.
+2015-10-29 00:24:58,050 - MainThread - botocore.hooks - DEBUG - Event after-call.ec2.RunInstances: calling handler <awscli.errorhandler.ErrorHandler object at 0x106ebd850>
+2015-10-29 00:24:58,050 - MainThread - awscli.errorhandler - DEBUG - HTTP Response Code: 200
+2015-10-29 00:24:58,050 - MainThread - awscli.formatter - DEBUG - RequestId: 6b90ed63-1bee-48c0-ab1a-bdeca6c140b9
+186069030643	r-3a34a7d3
+INSTANCES	0	x86_64		False	xen	ami-d05e75b8	i-4e359db7	t2.micro	KeyPair_2015OCT	2015-10-29T05:24:49.000Z	ip-10-0-2-136.ec2.internal	10.0.2.136		/dev/sda1	ebs	True	subnet-833692be	hvm	vpc-839d2ae7
+MONITORING	disabled
+NETWORKINTERFACES		06:f7:90:60:5d:b9	eni-e69e6bda	186069030643	ip-10-0-2-136.ec2.internal	10.0.2.136	True	in-use	subnet-833692be	vpc-839d2ae7
+ATTACHMENT	2015-10-29T05:24:49.000Z	eni-attach-44a76335	True	attaching
+GROUPS	sg-c0f45da6	SG_yzln1878
+PRIVATEIPADDRESSES	True	ip-10-0-2-136.ec2.internal	10.0.2.136
+PLACEMENT	us-east-1e		default
+SECURITYGROUPS	sg-c0f45da6	SG_yzln1878
+STATE	0	pending
+STATEREASON	pending	pending
+make_bucket: s3://Student_yzln1878_AS5_S3_Bucket_Pls_Delete_Me_After_Testing/
+upload: ./hahaDino.png to s3://Student_yzln1878_AS5_S3_Bucket_Pls_Delete_Me_After_Testing/hahaDino.png
+dhcp84:Launch-setup Ln1878$ aws ec2 run-instances --image-id ami-d05e75b8 --count 1 --instance-type t2.micro --key-name KeyPair_2015OCT --security-group-ids sg-c0f45da6 --subnet-id subnet-833692be --associate-public-ip-address --user-data file://../Environment-setup/aws_Assignment_5_install-env.sh
+186069030643	r-9a39aa73
+INSTANCES	0	x86_64		False	xen	ami-d05e75b8	i-92379f6b	t2.micro	KeyPair_2015OCT	2015-10-29T05:31:33.000Z	ip-10-0-1-134.ec2.internal	10.0.1.134		/dev/sda1	ebs	True	subnet-833692be	hvm	vpc-839d2ae7
+MONITORING	disabled
+NETWORKINTERFACES		06:6d:b5:bb:ba:31	eni-8a986db6	186069030643	ip-10-0-1-134.ec2.internal	10.0.1.134	True	in-use	subnet-833692be	vpc-839d2ae7
+ATTACHMENT	2015-10-29T05:31:33.000Z	eni-attach-dfa064ae	True	attaching
+GROUPS	sg-c0f45da6	SG_yzln1878
+PRIVATEIPADDRESSES	True	ip-10-0-1-134.ec2.internal	10.0.1.134
+PLACEMENT	us-east-1e		default
+SECURITYGROUPS	sg-c0f45da6	SG_yzln1878
+STATE	0	pending
+STATEREASON	pending	pending
+dhcp84:Launch-setup Ln1878$ 
