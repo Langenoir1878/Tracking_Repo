@@ -1,0 +1,165 @@
+Last login: Thu Nov  5 09:55:09 on ttys001
+dhcp220:~ Ln1878$ cd Desktop/LocalGit/Launch-setup/
+dhcp220:Launch-setup Ln1878$ ./launch.sh ami-d05e75b8 1 t2.micro sg-c0f45da6 subnet-833692be KeyPair_2015OCT simmon
+the output is 
+
+list index out of range
+-Cleaning up existing Load Balancers
+The LBs are 
+ARRAY LENGTH IS 0
+The asgs are: 
+the number is:  0
+All done
+sed: --debug: No such file or directory
+
+
+list index out of range
+instances are running.
+SIMMON-THE-CAT-501103829.us-east-1.elb.amazonaws.com
+
+ELB created, sleep 7 seconds
+........
+
+
+list index out of range
+HEALTHCHECK	2	30	HTTP:80/index.html	3	2
+
+Opening the ELB in 1 minute in web browser
+.............................................................
+Creating launch configuration: SIMMON-CONFIG-LAUNCH
+2015-11-05 10:17:54,717 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/1.8.7 Python/2.7.10 Darwin/15.0.0, botocore version: 1.2.5
+2015-11-05 10:17:54,717 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['autoscaling', 'create-launch-configuration', '--launch-configuration-name', 'SIMMON-CONFIG-LAUNCH', '--image-id', 'ami-d05e75b8', '--instance-type', 't2.micro', '--security-groups', 'sg-c0f45da6', '--key-name', 'KeyPair_2015OCT', '--user-data', 'file://../Environment-setup/install-webserver.sh', '--iam-instance-profile', 'simmon', '--debug']
+2015-11-05 10:17:54,717 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_scalar_parsers at 0x103f05de8>
+2015-11-05 10:17:54,717 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_assume_role_provider at 0x103ece6e0>
+2015-11-05 10:17:54,772 - MainThread - botocore.hooks - DEBUG - Event service-data-loaded.autoscaling: calling handler <function register_retries_for_service at 0x1039cc140>
+2015-11-05 10:17:54,772 - MainThread - botocore.handlers - DEBUG - Registering retry handlers for service: autoscaling
+2015-11-05 10:17:54,777 - MainThread - botocore.hooks - DEBUG - Event building-command-table.autoscaling: calling handler <function add_waiters at 0x103edac08>
+2015-11-05 10:17:54,780 - MainThread - awscli.clidriver - DEBUG - OrderedDict([(u'launch-configuration-name', <awscli.arguments.CLIArgument object at 0x1043a0e10>), (u'image-id', <awscli.arguments.CLIArgument object at 0x1043a0750>), (u'key-name', <awscli.arguments.CLIArgument object at 0x1043a0e50>), (u'security-groups', <awscli.arguments.ListArgument object at 0x1043a0e90>), (u'classic-link-vpc-id', <awscli.arguments.CLIArgument object at 0x1043a0ed0>), (u'classic-link-vpc-security-groups', <awscli.arguments.ListArgument object at 0x1043a0f10>), (u'user-data', <awscli.arguments.CLIArgument object at 0x1043a0f50>), (u'instance-id', <awscli.arguments.CLIArgument object at 0x1043a0f90>), (u'instance-type', <awscli.arguments.CLIArgument object at 0x1043a0fd0>), (u'kernel-id', <awscli.arguments.CLIArgument object at 0x1043b3050>), (u'ramdisk-id', <awscli.arguments.CLIArgument object at 0x1043b3090>), (u'block-device-mappings', <awscli.arguments.ListArgument object at 0x1043b30d0>), (u'instance-monitoring', <awscli.arguments.CLIArgument object at 0x1043b3110>), (u'spot-price', <awscli.arguments.CLIArgument object at 0x1043b3150>), (u'iam-instance-profile', <awscli.arguments.CLIArgument object at 0x1043b3190>), (u'ebs-optimized', <awscli.arguments.BooleanArgument object at 0x1043b31d0>), (u'no-ebs-optimized', <awscli.arguments.BooleanArgument object at 0x1043b3210>), (u'associate-public-ip-address', <awscli.arguments.BooleanArgument object at 0x1043b3250>), (u'no-associate-public-ip-address', <awscli.arguments.BooleanArgument object at 0x1043b32d0>), (u'placement-tenancy', <awscli.arguments.CLIArgument object at 0x1043b3310>)])
+2015-11-05 10:17:54,780 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.autoscaling.create-launch-configuration: calling handler <function add_streaming_output_arg at 0x103c6f578>
+2015-11-05 10:17:54,781 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.autoscaling.create-launch-configuration: calling handler <function add_cli_input_json at 0x103ec3ed8>
+2015-11-05 10:17:54,781 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.autoscaling.create-launch-configuration: calling handler <function unify_paging_params at 0x103d93578>
+2015-11-05 10:17:54,782 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.autoscaling.create-launch-configuration: calling handler <function add_generate_skeleton at 0x103ece230>
+2015-11-05 10:17:54,782 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.autoscaling.create-launch-configuration: calling handler <bound method CliInputJSONArgument.override_required_args of <awscli.customizations.cliinputjson.CliInputJSONArgument object at 0x1043a0910>>
+2015-11-05 10:17:54,782 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.autoscaling.create-launch-configuration: calling handler <bound method GenerateCliSkeletonArgument.override_required_args of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x1043a0650>>
+2015-11-05 10:17:54,786 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.launch-configuration-name: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,786 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.autoscaling.create-launch-configuration: calling handler <awscli.argprocess.ParamShorthand object at 0x103f129d0>
+2015-11-05 10:17:54,787 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'SIMMON-CONFIG-LAUNCH' for parameter "launch_configuration_name": u'SIMMON-CONFIG-LAUNCH'
+2015-11-05 10:17:54,787 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.image-id: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,787 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.autoscaling.create-launch-configuration: calling handler <awscli.argprocess.ParamShorthand object at 0x103f129d0>
+2015-11-05 10:17:54,787 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'ami-d05e75b8' for parameter "image_id": u'ami-d05e75b8'
+2015-11-05 10:17:54,787 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.key-name: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,788 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.autoscaling.create-launch-configuration: calling handler <awscli.argprocess.ParamShorthand object at 0x103f129d0>
+2015-11-05 10:17:54,788 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'KeyPair_2015OCT' for parameter "key_name": u'KeyPair_2015OCT'
+2015-11-05 10:17:54,788 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.security-groups: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,788 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.autoscaling.create-launch-configuration: calling handler <awscli.argprocess.ParamShorthand object at 0x103f129d0>
+2015-11-05 10:17:54,788 - MainThread - awscli.arguments - DEBUG - Unpacked value of [u'sg-c0f45da6'] for parameter "security_groups": [u'sg-c0f45da6']
+2015-11-05 10:17:54,788 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.classic-link-vpc-id: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,789 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.classic-link-vpc-security-groups: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,789 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.user-data: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,789 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.autoscaling.create-launch-configuration: calling handler <awscli.argprocess.ParamShorthand object at 0x103f129d0>
+2015-11-05 10:17:54,789 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'#!/bin/bash\n# Repo ref: https://github.com/jhajek/itmo-544-444-env/blob/master/install-webserver.sh\n\nsudo apt-get update -y\nsudo apt-get install -y apache2 git php5 php5-mysql php5-curl mysql-client curl\n\n\n\nsudo git clone https://github.com/Langenoir1878/Application-setup.git\n\nmv ./Application-setup/images /var/www/html/images\nmv ./Application-setup/*.png /var/www/html\nmv ./Application-setup/*.js /var/www/html\nmv ./Application-setup/*.css /var/www/html\nmv ./Application-setup/*.php /var/www/html\n\nmv ./Application-setup/*.eot /var/www/html\nmv ./Application-setup/*.svg /var/www/html\nmv ./Application-setup/*.ttf /var/www/html\nmv ./Application-setup/*.woff /var/www/html\nmv ./Application-setup/*.woff2 /var/www/html\n\nmv ./Application-setup/css var/www/html\nmv ./Application-setup/js var/www/html\nmv ./Application-setup/fonts var/www/html\n\n\n\n\ncurl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt\n\nsudo php composer.phar require aws/aws-sdk-php &> /tmp/runcomposer.txt\n\nsudo mv vendor /var/www/html &> /tmp/movevendor.txt\n\nsudo php /var/www/html/setup.php &> /tmp/database-setup.txt\n\n\n\necho "Hi, install-webserver.sh has been called!" > /tmp/hello.txt\n\n' for parameter "user_data": u'#!/bin/bash\n# Repo ref: https://github.com/jhajek/itmo-544-444-env/blob/master/install-webserver.sh\n\nsudo apt-get update -y\nsudo apt-get install -y apache2 git php5 php5-mysql php5-curl mysql-client curl\n\n\n\nsudo git clone https://github.com/Langenoir1878/Application-setup.git\n\nmv ./Application-setup/images /var/www/html/images\nmv ./Application-setup/*.png /var/www/html\nmv ./Application-setup/*.js /var/www/html\nmv ./Application-setup/*.css /var/www/html\nmv ./Application-setup/*.php /var/www/html\n\nmv ./Application-setup/*.eot /var/www/html\nmv ./Application-setup/*.svg /var/www/html\nmv ./Application-setup/*.ttf /var/www/html\nmv ./Application-setup/*.woff /var/www/html\nmv ./Application-setup/*.woff2 /var/www/html\n\nmv ./Application-setup/css var/www/html\nmv ./Application-setup/js var/www/html\nmv ./Application-setup/fonts var/www/html\n\n\n\n\ncurl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt\n\nsudo php composer.phar require aws/aws-sdk-php &> /tmp/runcomposer.txt\n\nsudo mv vendor /var/www/html &> /tmp/movevendor.txt\n\nsudo php /var/www/html/setup.php &> /tmp/database-setup.txt\n\n\n\necho "Hi, install-webserver.sh has been called!" > /tmp/hello.txt\n\n'
+2015-11-05 10:17:54,790 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.instance-id: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,790 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.instance-type: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,790 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.autoscaling.create-launch-configuration: calling handler <awscli.argprocess.ParamShorthand object at 0x103f129d0>
+2015-11-05 10:17:54,790 - MainThread - awscli.arguments - DEBUG - Unpacked value of u't2.micro' for parameter "instance_type": u't2.micro'
+2015-11-05 10:17:54,790 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.kernel-id: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,791 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.ramdisk-id: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,791 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.block-device-mappings: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,791 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.instance-monitoring: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,791 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.spot-price: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,791 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.iam-instance-profile: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,792 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.autoscaling.create-launch-configuration: calling handler <awscli.argprocess.ParamShorthand object at 0x103f129d0>
+2015-11-05 10:17:54,792 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'simmon' for parameter "iam_instance_profile": u'simmon'
+2015-11-05 10:17:54,792 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.ebs-optimized: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,792 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.associate-public-ip-address: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,792 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.placement-tenancy: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,792 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.cli-input-json: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,793 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.autoscaling.create-launch-configuration.generate-cli-skeleton: calling handler <function uri_param at 0x103c500c8>
+2015-11-05 10:17:54,793 - MainThread - botocore.hooks - DEBUG - Event calling-command.autoscaling.create-launch-configuration: calling handler <bound method GenerateCliSkeletonArgument.generate_json_skeleton of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x1043a0650>>
+2015-11-05 10:17:54,793 - MainThread - botocore.hooks - DEBUG - Event calling-command.autoscaling.create-launch-configuration: calling handler <bound method CliInputJSONArgument.add_to_call_parameters of <awscli.customizations.cliinputjson.CliInputJSONArgument object at 0x1043a0910>>
+2015-11-05 10:17:54,793 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: env
+2015-11-05 10:17:54,793 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: assume-role
+2015-11-05 10:17:54,793 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: shared-credentials-file
+2015-11-05 10:17:54,794 - MainThread - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2015-11-05 10:17:54,795 - MainThread - botocore.client - DEBUG - Registering retry handlers for service: autoscaling
+2015-11-05 10:17:54,799 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.autoscaling: calling handler <function add_generate_presigned_url at 0x1039a96e0>
+2015-11-05 10:17:55,270 - MainThread - botocore.endpoint - DEBUG - Setting autoscaling timeout as (60, 60)
+2015-11-05 10:17:55,271 - MainThread - botocore.hooks - DEBUG - Event before-parameter-build.autoscaling.CreateLaunchConfiguration: calling handler <function base64_encode_user_data at 0x1039cc5f0>
+2015-11-05 10:17:55,273 - MainThread - botocore.endpoint - DEBUG - Making request for <botocore.model.OperationModel object at 0x1043c2bd0> (verify_ssl=True) with params: {'body': {u'UserData': u'IyEvYmluL2Jhc2gKIyBSZXBvIHJlZjogaHR0cHM6Ly9naXRodWIuY29tL2poYWplay9pdG1vLTU0NC00NDQtZW52L2Jsb2IvbWFzdGVyL2luc3RhbGwtd2Vic2VydmVyLnNoCgpzdWRvIGFwdC1nZXQgdXBkYXRlIC15CnN1ZG8gYXB0LWdldCBpbnN0YWxsIC15IGFwYWNoZTIgZ2l0IHBocDUgcGhwNS1teXNxbCBwaHA1LWN1cmwgbXlzcWwtY2xpZW50IGN1cmwKCgoKc3VkbyBnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL0xhbmdlbm9pcjE4NzgvQXBwbGljYXRpb24tc2V0dXAuZ2l0CgptdiAuL0FwcGxpY2F0aW9uLXNldHVwL2ltYWdlcyAvdmFyL3d3dy9odG1sL2ltYWdlcwptdiAuL0FwcGxpY2F0aW9uLXNldHVwLyoucG5nIC92YXIvd3d3L2h0bWwKbXYgLi9BcHBsaWNhdGlvbi1zZXR1cC8qLmpzIC92YXIvd3d3L2h0bWwKbXYgLi9BcHBsaWNhdGlvbi1zZXR1cC8qLmNzcyAvdmFyL3d3dy9odG1sCm12IC4vQXBwbGljYXRpb24tc2V0dXAvKi5waHAgL3Zhci93d3cvaHRtbAoKbXYgLi9BcHBsaWNhdGlvbi1zZXR1cC8qLmVvdCAvdmFyL3d3dy9odG1sCm12IC4vQXBwbGljYXRpb24tc2V0dXAvKi5zdmcgL3Zhci93d3cvaHRtbAptdiAuL0FwcGxpY2F0aW9uLXNldHVwLyoudHRmIC92YXIvd3d3L2h0bWwKbXYgLi9BcHBsaWNhdGlvbi1zZXR1cC8qLndvZmYgL3Zhci93d3cvaHRtbAptdiAuL0FwcGxpY2F0aW9uLXNldHVwLyoud29mZjIgL3Zhci93d3cvaHRtbAoKbXYgLi9BcHBsaWNhdGlvbi1zZXR1cC9jc3MgdmFyL3d3dy9odG1sCm12IC4vQXBwbGljYXRpb24tc2V0dXAvanMgdmFyL3d3dy9odG1sCm12IC4vQXBwbGljYXRpb24tc2V0dXAvZm9udHMgdmFyL3d3dy9odG1sCgoKCgpjdXJsIC1zUyBodHRwczovL2dldGNvbXBvc2VyLm9yZy9pbnN0YWxsZXIgfCBzdWRvIHBocCAmPiAvdG1wL2dldGNvbXBvc2VyLnR4dAoKc3VkbyBwaHAgY29tcG9zZXIucGhhciByZXF1aXJlIGF3cy9hd3Mtc2RrLXBocCAmPiAvdG1wL3J1bmNvbXBvc2VyLnR4dAoKc3VkbyBtdiB2ZW5kb3IgL3Zhci93d3cvaHRtbCAmPiAvdG1wL21vdmV2ZW5kb3IudHh0CgpzdWRvIHBocCAvdmFyL3d3dy9odG1sL3NldHVwLnBocCAmPiAvdG1wL2RhdGFiYXNlLXNldHVwLnR4dAoKCgplY2hvICJIaSwgaW5zdGFsbC13ZWJzZXJ2ZXIuc2ggaGFzIGJlZW4gY2FsbGVkISIgPiAvdG1wL2hlbGxvLnR4dAoK', u'SecurityGroups.member.1': u'sg-c0f45da6', 'Version': u'2011-01-01', u'ImageId': u'ami-d05e75b8', u'KeyName': u'KeyPair_2015OCT', u'LaunchConfigurationName': u'SIMMON-CONFIG-LAUNCH', 'Action': u'CreateLaunchConfiguration', u'IamInstanceProfile': u'simmon', u'InstanceType': u't2.micro'}, 'url': u'https://autoscaling.us-east-1.amazonaws.com/', 'headers': {'User-Agent': 'aws-cli/1.8.7 Python/2.7.10 Darwin/15.0.0'}, 'query_string': '', 'url_path': '/', 'method': u'POST'}
+2015-11-05 10:17:55,273 - MainThread - botocore.hooks - DEBUG - Event request-created.autoscaling.CreateLaunchConfiguration: calling handler <bound method AutoScaling._sign_request of <botocore.client.AutoScaling object at 0x1043ee1d0>>
+2015-11-05 10:17:55,274 - MainThread - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2015-11-05 10:17:55,274 - MainThread - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+host:autoscaling.us-east-1.amazonaws.com
+user-agent:aws-cli/1.8.7 Python/2.7.10 Darwin/15.0.0
+x-amz-date:20151105T161755Z
+
+host;user-agent;x-amz-date
+d45784a5c4ff9ff0fea7201a84e4c800c64b9b4a4be9b2b5637ab5324bbb0957
+2015-11-05 10:17:55,275 - MainThread - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20151105T161755Z
+20151105/us-east-1/autoscaling/aws4_request
+d3ff474d0f8f8f29775fef96523356a9d7bc9edbf24f36546befeb85c6a20e82
+2015-11-05 10:17:55,275 - MainThread - botocore.auth - DEBUG - Signature:
+01a1beb1074b64a8040f3fdb0043ec93eadb8c2305a585a4e8e0cbbdd3bb747c
+2015-11-05 10:17:55,280 - MainThread - botocore.endpoint - DEBUG - Sending http request: <PreparedRequest [POST]>
+2015-11-05 10:17:55,281 - MainThread - botocore.vendored.requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): autoscaling.us-east-1.amazonaws.com
+2015-11-05 10:17:55,623 - MainThread - botocore.vendored.requests.packages.urllib3.connectionpool - DEBUG - "POST / HTTP/1.1" 200 237
+2015-11-05 10:17:55,624 - MainThread - botocore.parsers - DEBUG - Response headers: {'x-amzn-requestid': 'c57bfdd8-83d8-11e5-9037-01f9695c23bc', 'date': 'Thu, 05 Nov 2015 16:17:54 GMT', 'content-length': '237', 'content-type': 'text/xml'}
+2015-11-05 10:17:55,624 - MainThread - botocore.parsers - DEBUG - Response body:
+<CreateLaunchConfigurationResponse xmlns="http://autoscaling.amazonaws.com/doc/2011-01-01/">
+  <ResponseMetadata>
+    <RequestId>c57bfdd8-83d8-11e5-9037-01f9695c23bc</RequestId>
+  </ResponseMetadata>
+</CreateLaunchConfigurationResponse>
+
+2015-11-05 10:17:55,625 - MainThread - botocore.hooks - DEBUG - Event needs-retry.autoscaling.CreateLaunchConfiguration: calling handler <botocore.retryhandler.RetryHandler object at 0x1042edc10>
+2015-11-05 10:17:55,625 - MainThread - botocore.retryhandler - DEBUG - No retry needed.
+2015-11-05 10:17:55,625 - MainThread - botocore.hooks - DEBUG - Event after-call.autoscaling.CreateLaunchConfiguration: calling handler <awscli.errorhandler.ErrorHandler object at 0x103f25650>
+2015-11-05 10:17:55,625 - MainThread - awscli.errorhandler - DEBUG - HTTP Response Code: 200
+2015-11-05 10:17:55,625 - MainThread - awscli.formatter - DEBUG - RequestId: c57bfdd8-83d8-11e5-9037-01f9695c23bc
+
+Creating the auto scaling group
+
+Creating database
+DBINSTANCE	5	True	1	rds-ca-2015	False	db.t1.micro	simmon-the-cat-db	creating	0	db-UOWTONVUETPDWG6VCIAUJLEHCE	mysql	5.6.23	general-public-license	LN1878	False	05:25-05:55	thu:06:00-thu:06:30	True	False	standard
+DBPARAMETERGROUPS	default.mysql5.6	in-sync
+DBSUBNETGROUP	default	default	Complete	vpc-4ea45e2a
+SUBNETS	subnet-94a25ea9	Active
+SUBNETAVAILABILITYZONE	us-east-1e
+SUBNETS	subnet-a37f3488	Active
+SUBNETAVAILABILITYZONE	us-east-1d
+OPTIONGROUPMEMBERSHIPS	default:mysql-5-6	in-sync
+PENDINGMODIFIEDVALUES	****
+VPCSECURITYGROUPS	active	sg-b94909de
+dhcp220:Launch-setup Ln1878$ ./cleanup.sh
+i-177ac9ee
+i-3e78cbc7
+the output is i-177ac9ee i-3e78cbc7
+TERMINATINGINSTANCES	i-3e78cbc7
+CURRENTSTATE	32	shutting-down
+PREVIOUSSTATE	16	running
+TERMINATINGINSTANCES	i-177ac9ee
+CURRENTSTATE	32	shutting-down
+PREVIOUSSTATE	16	running
+-Cleaning up existing Load Balancers
+The LBs are SIMMON-THE-CAT
+ARRAY LENGTH IS 1
+-Deleting existing RDS database-instances
+DBINSTANCE	5	True	us-east-1d	1	rds-ca-2015	False	db.t1.micro	simmon-the-cat-db	deleting	0	db-UOWTONVUETPDWG6VCIAUJLEHCE	mysql	5.6.23	2015-11-05T16:24:24.760Z	general-public-license	LN1878	False	05:25-05:55	thu:06:00-thu:06:30	True	False	standard
+DBPARAMETERGROUPS	default.mysql5.6	in-sync
+DBSUBNETGROUP	default	default	Complete	vpc-4ea45e2a
+SUBNETS	subnet-94a25ea9	Active
+SUBNETAVAILABILITYZONE	us-east-1e
+SUBNETS	subnet-a37f3488	Active
+SUBNETAVAILABILITYZONE	us-east-1d
+ENDPOINT	simmon-the-cat-db.c89krb1cpz84.us-east-1.rds.amazonaws.com	3306
+OPTIONGROUPMEMBERSHIPS	default:mysql-5-6	in-sync
+VPCSECURITYGROUPS	active	sg-b94909de
+The asgs are: 
+the number is:  0
+All done
+dhcp220:Launch-setup Ln1878$ 
