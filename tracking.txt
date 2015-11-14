@@ -1,0 +1,227 @@
+langenoirs-MacBook-Pro:LocalGit Ln1878$ cd Launch-setup/
+langenoirs-MacBook-Pro:Launch-setup Ln1878$ ./simpleLaunch.sh ami-d05e75b8 1 t2.micro sg-c0f45da6 subnet-833692be KeyPair_2015OCT simmon
+2015-11-13 20:54:33,298 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/1.8.7 Python/2.7.10 Darwin/15.0.0, botocore version: 1.2.5
+2015-11-13 20:54:33,298 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['ec2', 'run-instances', '--image-id', 'ami-d05e75b8', '--count', '1', '--instance-type', 't2.micro', '--security-group-ids', 'sg-c0f45da6', '--subnet-id', 'subnet-833692be', '--key-name', 'KeyPair_2015OCT', '--associate-public-ip-address', '--iam-instance-profile', 'Name=simmon', '--user-data', 'file://../Environment-setup/install-webserver.sh', '--debug']
+2015-11-13 20:54:33,298 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_scalar_parsers at 0x1085f5de8>
+2015-11-13 20:54:33,298 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_assume_role_provider at 0x1085be6e0>
+2015-11-13 20:54:33,709 - MainThread - botocore.hooks - DEBUG - Event service-data-loaded.ec2: calling handler <function register_retries_for_service at 0x1080bc140>
+2015-11-13 20:54:33,710 - MainThread - botocore.handlers - DEBUG - Registering retry handlers for service: ec2
+2015-11-13 20:54:33,722 - MainThread - botocore.hooks - DEBUG - Event building-command-table.ec2: calling handler <functools.partial object at 0x10860a940>
+2015-11-13 20:54:33,722 - MainThread - awscli.customizations.removals - DEBUG - Removing operation: import-instance
+2015-11-13 20:54:33,722 - MainThread - awscli.customizations.removals - DEBUG - Removing operation: import-volume
+2015-11-13 20:54:33,722 - MainThread - botocore.hooks - DEBUG - Event building-command-table.ec2: calling handler <function add_waiters at 0x1085cac08>
+2015-11-13 20:54:33,756 - MainThread - awscli.clidriver - DEBUG - OrderedDict([(u'dry-run', <awscli.arguments.BooleanArgument object at 0x108fc8790>), (u'no-dry-run', <awscli.arguments.BooleanArgument object at 0x108fc87d0>), (u'image-id', <awscli.arguments.CLIArgument object at 0x108fc8810>), (u'min-count', <awscli.arguments.CLIArgument object at 0x108fc8090>), (u'max-count', <awscli.arguments.CLIArgument object at 0x108fc8850>), (u'key-name', <awscli.arguments.CLIArgument object at 0x108fc8890>), (u'security-groups', <awscli.arguments.ListArgument object at 0x108fc88d0>), (u'security-group-ids', <awscli.arguments.ListArgument object at 0x108fc8910>), (u'user-data', <awscli.arguments.CLIArgument object at 0x108fc8950>), (u'instance-type', <awscli.arguments.CLIArgument object at 0x108fc8990>), (u'placement', <awscli.arguments.CLIArgument object at 0x108fc89d0>), (u'kernel-id', <awscli.arguments.CLIArgument object at 0x108fc8a10>), (u'ramdisk-id', <awscli.arguments.CLIArgument object at 0x108fc8a50>), (u'block-device-mappings', <awscli.arguments.ListArgument object at 0x108fc8a90>), (u'monitoring', <awscli.arguments.CLIArgument object at 0x108fc8ad0>), (u'subnet-id', <awscli.arguments.CLIArgument object at 0x108fc8b10>), (u'disable-api-termination', <awscli.arguments.BooleanArgument object at 0x108fc8b50>), (u'no-disable-api-termination', <awscli.arguments.BooleanArgument object at 0x108fc8b90>), (u'instance-initiated-shutdown-behavior', <awscli.arguments.CLIArgument object at 0x108fc8bd0>), (u'private-ip-address', <awscli.arguments.CLIArgument object at 0x108fc8c10>), (u'client-token', <awscli.arguments.CLIArgument object at 0x108fc8c50>), (u'additional-info', <awscli.arguments.CLIArgument object at 0x108fc8c90>), (u'network-interfaces', <awscli.arguments.ListArgument object at 0x108fc8cd0>), (u'iam-instance-profile', <awscli.arguments.CLIArgument object at 0x108fc8d10>), (u'ebs-optimized', <awscli.arguments.BooleanArgument object at 0x108fc8d50>), (u'no-ebs-optimized', <awscli.arguments.BooleanArgument object at 0x108fc8d90>)])
+2015-11-13 20:54:33,757 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_streaming_output_arg at 0x108360578>
+2015-11-13 20:54:33,757 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _rename_arg at 0x108626320>
+2015-11-13 20:54:33,757 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _rename_arg at 0x1086265f0>
+2015-11-13 20:54:33,757 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <functools.partial object at 0x10860aaa0>
+2015-11-13 20:54:33,761 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function ec2_add_count at 0x108360e60>
+2015-11-13 20:54:33,761 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function _add_params at 0x108525b18>
+2015-11-13 20:54:33,761 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_cli_input_json at 0x1085b3ed8>
+2015-11-13 20:54:33,761 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function unify_paging_params at 0x108483578>
+2015-11-13 20:54:33,784 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.ec2.run-instances: calling handler <function add_generate_skeleton at 0x1085be230>
+2015-11-13 20:54:33,785 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.ec2.run-instances: calling handler <bound method CliInputJSONArgument.override_required_args of <awscli.customizations.cliinputjson.CliInputJSONArgument object at 0x108fde850>>
+2015-11-13 20:54:33,785 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.ec2.run-instances: calling handler <bound method GenerateCliSkeletonArgument.override_required_args of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x1086b0c50>>
+2015-11-13 20:54:33,789 - MainThread - botocore.hooks - DEBUG - Event operation-args-parsed.ec2.run-instances: calling handler <functools.partial object at 0x108fd8158>
+2015-11-13 20:54:33,789 - MainThread - botocore.hooks - DEBUG - Event operation-args-parsed.ec2.run-instances: calling handler <function _check_args at 0x108525b90>
+2015-11-13 20:54:33,789 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.dry-run: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,789 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.image-id: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,789 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x108602950>
+2015-11-13 20:54:33,790 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'ami-d05e75b8' for parameter "image_id": u'ami-d05e75b8'
+2015-11-13 20:54:33,790 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.key-name: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,790 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x108602950>
+2015-11-13 20:54:33,790 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'KeyPair_2015OCT' for parameter "key_name": u'KeyPair_2015OCT'
+2015-11-13 20:54:33,790 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.security-groups: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,791 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.security-group-ids: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,791 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x108602950>
+2015-11-13 20:54:33,791 - MainThread - awscli.arguments - DEBUG - Unpacked value of [u'sg-c0f45da6'] for parameter "security_group_ids": [u'sg-c0f45da6']
+2015-11-13 20:54:33,791 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.user-data: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,792 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x108602950>
+2015-11-13 20:54:33,792 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'#!/bin/bash\n# Repo ref: https://github.com/jhajek/itmo-544-444-env/blob/master/install-webserver.sh\n\nsudo apt-get update -y\nsudo apt-get install -y apache2 git php5 php5-mysql php5-curl mysql-client curl\n\n\n\nsudo git clone https://github.com/Langenoir1878/Application-setup.git\n\nmv ./Application-setup/images /var/www/html/images\nmv ./Application-setup/*.png /var/www/html\nmv ./Application-setup/*.js /var/www/html\nmv ./Application-setup/*.css /var/www/html\nmv ./Application-setup/*.php /var/www/html\n\nmv ./Application-setup/*.eot /var/www/html\nmv ./Application-setup/*.svg /var/www/html\nmv ./Application-setup/*.ttf /var/www/html\nmv ./Application-setup/*.woff /var/www/html\nmv ./Application-setup/*.woff2 /var/www/html\n\nmv ./Application-setup/css var/www/html\nmv ./Application-setup/js var/www/html\nmv ./Application-setup/fonts var/www/html\n\n\n\n\ncurl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt\n\nsudo php composer.phar require aws/aws-sdk-php &> /tmp/runcomposer.txt\n\nsudo mv vendor /var/www/html &> /tmp/movevendor.txt\n\nsudo php /var/www/html/setup.php &> /tmp/database-setup.txt\n\n\n\necho "Hi, install-webserver.sh has been called!" > /tmp/hello.txt\n\n' for parameter "user_data": u'#!/bin/bash\n# Repo ref: https://github.com/jhajek/itmo-544-444-env/blob/master/install-webserver.sh\n\nsudo apt-get update -y\nsudo apt-get install -y apache2 git php5 php5-mysql php5-curl mysql-client curl\n\n\n\nsudo git clone https://github.com/Langenoir1878/Application-setup.git\n\nmv ./Application-setup/images /var/www/html/images\nmv ./Application-setup/*.png /var/www/html\nmv ./Application-setup/*.js /var/www/html\nmv ./Application-setup/*.css /var/www/html\nmv ./Application-setup/*.php /var/www/html\n\nmv ./Application-setup/*.eot /var/www/html\nmv ./Application-setup/*.svg /var/www/html\nmv ./Application-setup/*.ttf /var/www/html\nmv ./Application-setup/*.woff /var/www/html\nmv ./Application-setup/*.woff2 /var/www/html\n\nmv ./Application-setup/css var/www/html\nmv ./Application-setup/js var/www/html\nmv ./Application-setup/fonts var/www/html\n\n\n\n\ncurl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt\n\nsudo php composer.phar require aws/aws-sdk-php &> /tmp/runcomposer.txt\n\nsudo mv vendor /var/www/html &> /tmp/movevendor.txt\n\nsudo php /var/www/html/setup.php &> /tmp/database-setup.txt\n\n\n\necho "Hi, install-webserver.sh has been called!" > /tmp/hello.txt\n\n'
+2015-11-13 20:54:33,792 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.instance-type: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,792 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x108602950>
+2015-11-13 20:54:33,792 - MainThread - awscli.arguments - DEBUG - Unpacked value of u't2.micro' for parameter "instance_type": u't2.micro'
+2015-11-13 20:54:33,793 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.placement: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,793 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.kernel-id: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,793 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.ramdisk-id: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,793 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.block-device-mappings: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,793 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.monitoring: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,794 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.subnet-id: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,794 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x108602950>
+2015-11-13 20:54:33,794 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'subnet-833692be' for parameter "subnet_id": u'subnet-833692be'
+2015-11-13 20:54:33,794 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.disable-api-termination: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,794 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.instance-initiated-shutdown-behavior: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,794 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.private-ip-address: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,794 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.client-token: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,795 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.additional-info: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,795 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.network-interfaces: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,795 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.iam-instance-profile: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,795 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.ec2.run-instances: calling handler <awscli.argprocess.ParamShorthand object at 0x108602950>
+2015-11-13 20:54:33,796 - MainThread - awscli.argprocess - DEBUG - Parsing param --iam-instance-profile as shorthand
+2015-11-13 20:54:33,796 - MainThread - awscli.arguments - DEBUG - Unpacked value of u'Name=simmon' for parameter "iam_instance_profile": {u'Name': u'simmon'}
+2015-11-13 20:54:33,796 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.ebs-optimized: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,796 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.count: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,796 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.secondary-private-ip-addresses: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,797 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.secondary-private-ip-address-count: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,797 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.associate-public-ip-address: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,797 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.no-associate-public-ip-address: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,797 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.cli-input-json: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,797 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.ec2.run-instances.generate-cli-skeleton: calling handler <function uri_param at 0x1083400c8>
+2015-11-13 20:54:33,797 - MainThread - botocore.hooks - DEBUG - Event calling-command.ec2.run-instances: calling handler <bound method GenerateCliSkeletonArgument.generate_json_skeleton of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x1086b0c50>>
+2015-11-13 20:54:33,798 - MainThread - botocore.hooks - DEBUG - Event calling-command.ec2.run-instances: calling handler <bound method CliInputJSONArgument.add_to_call_parameters of <awscli.customizations.cliinputjson.CliInputJSONArgument object at 0x108fde850>>
+2015-11-13 20:54:33,798 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: env
+2015-11-13 20:54:33,798 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: assume-role
+2015-11-13 20:54:33,798 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: shared-credentials-file
+2015-11-13 20:54:33,798 - MainThread - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2015-11-13 20:54:33,800 - MainThread - botocore.client - DEBUG - Registering retry handlers for service: ec2
+2015-11-13 20:54:33,811 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.ec2: calling handler <function add_generate_presigned_url at 0x1080996e0>
+2015-11-13 20:54:33,921 - MainThread - botocore.endpoint - DEBUG - Setting ec2 timeout as (60, 60)
+2015-11-13 20:54:33,921 - MainThread - botocore.hooks - DEBUG - Event before-parameter-build.ec2.RunInstances: calling handler <function base64_encode_user_data at 0x1080bc5f0>
+2015-11-13 20:54:33,921 - MainThread - botocore.hooks - DEBUG - Event before-parameter-build.ec2.RunInstances: calling handler <function _fix_args at 0x108525c08>
+2015-11-13 20:54:33,925 - MainThread - botocore.endpoint - DEBUG - Making request for <botocore.model.OperationModel object at 0x109060d90> (verify_ssl=True) with params: {'body': {u'UserData': u'IyEvYmluL2Jhc2gKIyBSZXBvIHJlZjogaHR0cHM6Ly9naXRodWIuY29tL2poYWplay9pdG1vLTU0NC00NDQtZW52L2Jsb2IvbWFzdGVyL2luc3RhbGwtd2Vic2VydmVyLnNoCgpzdWRvIGFwdC1nZXQgdXBkYXRlIC15CnN1ZG8gYXB0LWdldCBpbnN0YWxsIC15IGFwYWNoZTIgZ2l0IHBocDUgcGhwNS1teXNxbCBwaHA1LWN1cmwgbXlzcWwtY2xpZW50IGN1cmwKCgoKc3VkbyBnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL0xhbmdlbm9pcjE4NzgvQXBwbGljYXRpb24tc2V0dXAuZ2l0CgptdiAuL0FwcGxpY2F0aW9uLXNldHVwL2ltYWdlcyAvdmFyL3d3dy9odG1sL2ltYWdlcwptdiAuL0FwcGxpY2F0aW9uLXNldHVwLyoucG5nIC92YXIvd3d3L2h0bWwKbXYgLi9BcHBsaWNhdGlvbi1zZXR1cC8qLmpzIC92YXIvd3d3L2h0bWwKbXYgLi9BcHBsaWNhdGlvbi1zZXR1cC8qLmNzcyAvdmFyL3d3dy9odG1sCm12IC4vQXBwbGljYXRpb24tc2V0dXAvKi5waHAgL3Zhci93d3cvaHRtbAoKbXYgLi9BcHBsaWNhdGlvbi1zZXR1cC8qLmVvdCAvdmFyL3d3dy9odG1sCm12IC4vQXBwbGljYXRpb24tc2V0dXAvKi5zdmcgL3Zhci93d3cvaHRtbAptdiAuL0FwcGxpY2F0aW9uLXNldHVwLyoudHRmIC92YXIvd3d3L2h0bWwKbXYgLi9BcHBsaWNhdGlvbi1zZXR1cC8qLndvZmYgL3Zhci93d3cvaHRtbAptdiAuL0FwcGxpY2F0aW9uLXNldHVwLyoud29mZjIgL3Zhci93d3cvaHRtbAoKbXYgLi9BcHBsaWNhdGlvbi1zZXR1cC9jc3MgdmFyL3d3dy9odG1sCm12IC4vQXBwbGljYXRpb24tc2V0dXAvanMgdmFyL3d3dy9odG1sCm12IC4vQXBwbGljYXRpb24tc2V0dXAvZm9udHMgdmFyL3d3dy9odG1sCgoKCgpjdXJsIC1zUyBodHRwczovL2dldGNvbXBvc2VyLm9yZy9pbnN0YWxsZXIgfCBzdWRvIHBocCAmPiAvdG1wL2dldGNvbXBvc2VyLnR4dAoKc3VkbyBwaHAgY29tcG9zZXIucGhhciByZXF1aXJlIGF3cy9hd3Mtc2RrLXBocCAmPiAvdG1wL3J1bmNvbXBvc2VyLnR4dAoKc3VkbyBtdiB2ZW5kb3IgL3Zhci93d3cvaHRtbCAmPiAvdG1wL21vdmV2ZW5kb3IudHh0CgpzdWRvIHBocCAvdmFyL3d3dy9odG1sL3NldHVwLnBocCAmPiAvdG1wL2RhdGFiYXNlLXNldHVwLnR4dAoKCgplY2hvICJIaSwgaW5zdGFsbC13ZWJzZXJ2ZXIuc2ggaGFzIGJlZW4gY2FsbGVkISIgPiAvdG1wL2hlbGxvLnR4dAoK', u'IamInstanceProfile.Name': u'simmon', 'Version': u'2015-04-15', u'NetworkInterface.1.SecurityGroupId.1': u'sg-c0f45da6', u'NetworkInterface.1.SubnetId': u'subnet-833692be', u'ImageId': u'ami-d05e75b8', u'KeyName': u'KeyPair_2015OCT', 'MaxCount': 1, 'Action': u'RunInstances', 'MinCount': 1, u'NetworkInterface.1.AssociatePublicIpAddress': 'true', u'InstanceType': u't2.micro', u'NetworkInterface.1.DeviceIndex': 0}, 'url': u'https://ec2.us-east-1.amazonaws.com/', 'headers': {'User-Agent': 'aws-cli/1.8.7 Python/2.7.10 Darwin/15.0.0'}, 'query_string': '', 'url_path': '/', 'method': u'POST'}
+2015-11-13 20:54:33,925 - MainThread - botocore.hooks - DEBUG - Event request-created.ec2.RunInstances: calling handler <bound method EC2._sign_request of <botocore.client.EC2 object at 0x10906c410>>
+2015-11-13 20:54:33,927 - MainThread - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2015-11-13 20:54:33,927 - MainThread - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+host:ec2.us-east-1.amazonaws.com
+user-agent:aws-cli/1.8.7 Python/2.7.10 Darwin/15.0.0
+x-amz-date:20151114T025433Z
+
+host;user-agent;x-amz-date
+c9e5d31d0c6dd32cd21b0807ea532922514ab5e4c8e2c4cfcf1f3d77877e85c6
+2015-11-13 20:54:33,927 - MainThread - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20151114T025433Z
+20151114/us-east-1/ec2/aws4_request
+c2a93afd95e0bd8fb831957267d9b8e71547e941c5cf39600efd435325ea0e0c
+2015-11-13 20:54:33,927 - MainThread - botocore.auth - DEBUG - Signature:
+9e477f98748d164c219294b2a6fa7c978c3d8c56e8585df2f5f9c14877c7609f
+2015-11-13 20:54:33,930 - MainThread - botocore.endpoint - DEBUG - Sending http request: <PreparedRequest [POST]>
+2015-11-13 20:54:33,931 - MainThread - botocore.vendored.requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): ec2.us-east-1.amazonaws.com
+2015-11-13 20:54:35,264 - MainThread - botocore.vendored.requests.packages.urllib3.connectionpool - DEBUG - "POST / HTTP/1.1" 200 None
+2015-11-13 20:54:35,265 - MainThread - botocore.parsers - DEBUG - Response headers: {'transfer-encoding': 'chunked', 'vary': 'Accept-Encoding', 'server': 'AmazonEC2', 'content-type': 'text/xml;charset=UTF-8', 'date': 'Sat, 14 Nov 2015 02:54:35 GMT'}
+2015-11-13 20:54:35,265 - MainThread - botocore.parsers - DEBUG - Response body:
+<?xml version="1.0" encoding="UTF-8"?>
+<RunInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2015-04-15/">
+    <requestId>0d768f5e-19fa-4fa7-81b5-a66f15c86cc1</requestId>
+    <reservationId>r-e1bddd08</reservationId>
+    <ownerId>186069030643</ownerId>
+    <groupSet/>
+    <instancesSet>
+        <item>
+            <instanceId>i-7cce4a85</instanceId>
+            <imageId>ami-d05e75b8</imageId>
+            <instanceState>
+                <code>0</code>
+                <name>pending</name>
+            </instanceState>
+            <privateDnsName>ip-10-0-0-121.ec2.internal</privateDnsName>
+            <dnsName/>
+            <reason/>
+            <keyName>KeyPair_2015OCT</keyName>
+            <amiLaunchIndex>0</amiLaunchIndex>
+            <productCodes/>
+            <instanceType>t2.micro</instanceType>
+            <launchTime>2015-11-14T02:54:35.000Z</launchTime>
+            <placement>
+                <availabilityZone>us-east-1e</availabilityZone>
+                <groupName/>
+                <tenancy>default</tenancy>
+            </placement>
+            <monitoring>
+                <state>disabled</state>
+            </monitoring>
+            <subnetId>subnet-833692be</subnetId>
+            <vpcId>vpc-839d2ae7</vpcId>
+            <privateIpAddress>10.0.0.121</privateIpAddress>
+            <sourceDestCheck>true</sourceDestCheck>
+            <groupSet>
+                <item>
+                    <groupId>sg-c0f45da6</groupId>
+                    <groupName>SG_yzln1878</groupName>
+                </item>
+            </groupSet>
+            <stateReason>
+                <code>pending</code>
+                <message>pending</message>
+            </stateReason>
+            <architecture>x86_64</architecture>
+            <rootDeviceType>ebs</rootDeviceType>
+            <rootDeviceName>/dev/sda1</rootDeviceName>
+            <blockDeviceMapping/>
+            <virtualizationType>hvm</virtualizationType>
+            <clientToken/>
+            <hypervisor>xen</hypervisor>
+            <networkInterfaceSet>
+                <item>
+                    <networkInterfaceId>eni-79e33645</networkInterfaceId>
+                    <subnetId>subnet-833692be</subnetId>
+                    <vpcId>vpc-839d2ae7</vpcId>
+                    <description/>
+                    <ownerId>186069030643</ownerId>
+                    <status>in-use</status>
+                    <macAddress>06:02:4b:78:28:17</macAddress>
+                    <privateIpAddress>10.0.0.121</privateIpAddress>
+                    <privateDnsName>ip-10-0-0-121.ec2.internal</privateDnsName>
+                    <sourceDestCheck>true</sourceDestCheck>
+                    <groupSet>
+                        <item>
+                            <groupId>sg-c0f45da6</groupId>
+                            <groupName>SG_yzln1878</groupName>
+                        </item>
+                    </groupSet>
+                    <attachment>
+                        <attachmentId>eni-attach-d76abba6</attachmentId>
+                        <deviceIndex>0</deviceIndex>
+                        <status>attaching</status>
+                        <attachTime>2015-11-14T02:54:35.000Z</attachTime>
+                        <deleteOnTermination>true</deleteOnTermination>
+                    </attachment>
+                    <privateIpAddressesSet>
+                        <item>
+                            <privateIpAddress>10.0.0.121</privateIpAddress>
+                            <privateDnsName>ip-10-0-0-121.ec2.internal</privateDnsName>
+                            <primary>true</primary>
+                        </item>
+                    </privateIpAddressesSet>
+                </item>
+            </networkInterfaceSet>
+            <iamInstanceProfile>
+                <arn>arn:aws:iam::186069030643:instance-profile/simmon</arn>
+                <id>AIPAJ67GHRJZUCN4P2C7O</id>
+            </iamInstanceProfile>
+            <ebsOptimized>false</ebsOptimized>
+        </item>
+    </instancesSet>
+</RunInstancesResponse>
+2015-11-13 20:54:35,273 - MainThread - botocore.hooks - DEBUG - Event needs-retry.ec2.RunInstances: calling handler <botocore.retryhandler.RetryHandler object at 0x108e64ad0>
+2015-11-13 20:54:35,273 - MainThread - botocore.retryhandler - DEBUG - No retry needed.
+2015-11-13 20:54:35,273 - MainThread - botocore.hooks - DEBUG - Event after-call.ec2.RunInstances: calling handler <awscli.errorhandler.ErrorHandler object at 0x1086165d0>
+2015-11-13 20:54:35,273 - MainThread - awscli.errorhandler - DEBUG - HTTP Response Code: 200
+2015-11-13 20:54:35,274 - MainThread - awscli.formatter - DEBUG - RequestId: 0d768f5e-19fa-4fa7-81b5-a66f15c86cc1
+186069030643	r-e1bddd08
+INSTANCES	0	x86_64		False	xen	ami-d05e75b8	i-7cce4a85	t2.micro	KeyPair_2015OCT	2015-11-14T02:54:35.000Z	ip-10-0-0-121.ec2.internal	10.0.0.121		/dev/sda1	ebs	True	subnet-833692be	hvm	vpc-839d2ae7
+IAMINSTANCEPROFILE	arn:aws:iam::186069030643:instance-profile/simmon	AIPAJ67GHRJZUCN4P2C7O
+MONITORING	disabled
+NETWORKINTERFACES		06:02:4b:78:28:17	eni-79e33645	186069030643	ip-10-0-0-121.ec2.internal	10.0.0.121	True	in-use	subnet-833692be	vpc-839d2ae7
+ATTACHMENT	2015-11-14T02:54:35.000Z	eni-attach-d76abba6	True	attaching
+GROUPS	sg-c0f45da6	SG_yzln1878
+PRIVATEIPADDRESSES	True	ip-10-0-0-121.ec2.internal	10.0.0.121
+PLACEMENT	us-east-1e		default
+SECURITYGROUPS	sg-c0f45da6	SG_yzln1878
+STATE	0	pending
+STATEREASON	pending	pending
+DBINSTANCE	5	True	1	rds-ca-2015	False	db.t1.micro	simmon-the-cat-db	creating	simmoncatdb	0	db-4IOFCJXP7DL3BXSVP6S7QTVRHQ	mysql	5.6.23	general-public-license	LN1878	False	08:34-09:04	tue:10:18-tue:10:48	True	False	standard
+DBPARAMETERGROUPS	default.mysql5.6	in-sync
+DBSUBNETGROUP	default	default	Complete	vpc-4ea45e2a
+SUBNETS	subnet-94a25ea9	Active
+SUBNETAVAILABILITYZONE	us-east-1e
+SUBNETS	subnet-a37f3488	Active
+SUBNETAVAILABILITYZONE	us-east-1d
+OPTIONGROUPMEMBERSHIPS	default:mysql-5-6	in-sync
+PENDINGMODIFIEDVALUES	****
+VPCSECURITYGROUPS	active	sg-b94909de
+
+Please wait for a few minute, creating database : simmoncatdb . . .
