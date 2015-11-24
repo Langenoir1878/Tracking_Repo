@@ -1,0 +1,20 @@
+dhcp46:Launch-setup Ln1878$ ./launch.sh ami-d05e75b8 1 t2.micro sg-c0f45da6 subnet-833692be KeyPair_2015OCT User_yzln1878
+./launch.sh: line 17: ./cleanup.sh: Permission denied
+sed: --debug: No such file or directory
+
+A client error (InvalidParameterValue) occurred when calling the RunInstances operation: Value (User_yzln1878) for parameter iamInstanceProfile.name is invalid. Invalid IAM Instance Profile name
+
+
+list index out of range
+instances are running.
+SIMMON-THE-CAT-1803880723.us-east-1.elb.amazonaws.com
+
+ELB created, sleep 7 seconds
+........
+
+
+list index out of range
+HEALTHCHECK	2	30	HTTP:80/index.html	3	2
+
+Opening the ELB in 1 minute in web browser
+...........................
